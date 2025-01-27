@@ -1,0 +1,325 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": false,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "16373329798959832d": {
+      "type": "slideshow",
+      "blocks": {
+        "1637332979dc570147-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "BLACK FRIDAY SALE",
+            "title": "Save up\nto 50% off",
+            "title_size": 78,
+            "subheading": "Men's Sunglasses",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/madson-holiday-2022-header2400x978.jpg",
+            "image_mobile": "shopify://shop_images/madson-holiday-2022-header-mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "1637332979dc570147-0"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "300px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "blocks": {
+        "banner": {
+          "type": "banner",
+          "settings": {
+            "heading": "Banner promotion",
+            "text": "Add the details of your promotion in smaller text",
+            "link": "",
+            "label": "Shop now",
+            "color_tint": "#e95454",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        },
+        "advanced": {
+          "type": "advanced",
+          "disabled": true,
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "100",
+            "height": 500,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "banner",
+        "advanced"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": false
+      }
+    },
+    "1adfaa0a-4191-4c21-b846-ba9efc00e876": {
+      "type": "rich-text",
+      "blocks": {
+        "449fada7-c822-4f81-97b5-6f8cdd631350": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Polarized Sunglasses</p>"
+          }
+        }
+      },
+      "block_order": [
+        "449fada7-c822-4f81-97b5-6f8cdd631350"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "42106470-840b-4150-ba55-5a2ab2f30fda": {
+      "type": "promo-collections",
+      "blocks": {
+        "template--14725650088023__42106470-840b-4150-ba55-5a2ab2f30fda-1669328087a2d590fb-0": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Best Sellers",
+            "cta_link1": ""
+          }
+        },
+        "template--14725650088023__42106470-840b-4150-ba55-5a2ab2f30fda-1669328087a2d590fb-1": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Polarized",
+            "cta_link1": ""
+          }
+        },
+        "baabc82a-fab4-437d-a860-388cb46ea182": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Oversized",
+            "cta_link1": ""
+          }
+        },
+        "7824cbbf-3701-4829-992f-4ac8c6e0185f": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Limited Edition",
+            "cta_link1": ""
+          }
+        },
+        "ac7221a8-4bbd-42fa-8035-f9d289fb27b8": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Safety (Ansi)",
+            "cta_link1": ""
+          }
+        },
+        "eed9f0b3-e975-4fd8-9678-65aed430dabc": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Prescription Sunglasses",
+            "cta_link1": ""
+          }
+        },
+        "f154df69-7f77-4bca-8f45-f780a923c21f": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Non Polarized",
+            "cta_link1": ""
+          }
+        },
+        "85bfdc51-7ed4-4461-9454-d9fdbb51b8e4": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Clear Lens",
+            "cta_link1": ""
+          }
+        },
+        "2c91e47d-b55e-42f6-b70a-658c4afe7020": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "All",
+            "cta_link1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14725650088023__42106470-840b-4150-ba55-5a2ab2f30fda-1669328087a2d590fb-0",
+        "template--14725650088023__42106470-840b-4150-ba55-5a2ab2f30fda-1669328087a2d590fb-1",
+        "baabc82a-fab4-437d-a860-388cb46ea182",
+        "7824cbbf-3701-4829-992f-4ac8c6e0185f",
+        "ac7221a8-4bbd-42fa-8035-f9d289fb27b8",
+        "eed9f0b3-e975-4fd8-9678-65aed430dabc",
+        "f154df69-7f77-4bca-8f45-f780a923c21f",
+        "85bfdc51-7ed4-4461-9454-d9fdbb51b8e4",
+        "2c91e47d-b55e-42f6-b70a-658c4afe7020"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "5ea5c514-4cb5-4d37-a61d-17ea7fe414fc": {
+      "type": "featured-collection-single",
+      "settings": {
+        "title": "Trending Now",
+        "home_featured_products": "black-friday-polarized-sunglasses-best-sellers",
+        "per_row": 4,
+        "rows": 2,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "3cf6b64e-1b81-4a54-9153-012190e597b1": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/Camino-Camo-Kasey-900x1125.jpg",
+        "image_width": 700,
+        "subtitle": "Camino / CAMO",
+        "title": "",
+        "text": "",
+        "button_label": "Shop Now",
+        "button_link": "https://madsonofamerica.com/products/camino-black-memorial-camo-grey-polarized",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "dbd9316f-aee2-49a7-b11f-fb70debacf41": {
+      "type": "featured-collection-single",
+      "settings": {
+        "title": "",
+        "home_featured_products": "black-friday-polarized-sunglasses-best-sellers-cont",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "1b575643-d9c8-47fa-b8a6-7f8213c47afb": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/Classico-Camo-Red-900x1125.jpg",
+        "image_width": 700,
+        "subtitle": "CLASSICO / CAMO / RED CHROME",
+        "title": "",
+        "text": "",
+        "button_label": "SHOW NOW",
+        "button_link": "https://madsonofamerica.com/products/classico-camo-red-chrome-polarized",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection-sunglasses",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": false
+          }
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 2,
+            "rows_per_page": 50,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "collectionTitle": "MEN'S SUNGLASSES",
+        "collectionHeading": "Designed and built with the best materials available - backed with a Lifetime Warranty.",
+        "collectionSubheading": "FREE RETURNS ON ALL ORDERS",
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "drawer",
+        "enable_color_swatches": true,
+        "enable_sort": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "16373329798959832d",
+    "promo-grid",
+    "1adfaa0a-4191-4c21-b846-ba9efc00e876",
+    "42106470-840b-4150-ba55-5a2ab2f30fda",
+    "5ea5c514-4cb5-4d37-a61d-17ea7fe414fc",
+    "3cf6b64e-1b81-4a54-9153-012190e597b1",
+    "dbd9316f-aee2-49a7-b11f-fb70debacf41",
+    "1b575643-d9c8-47fa-b8a6-7f8213c47afb",
+    "main-collection"
+  ]
+}

@@ -1,0 +1,412 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1637710759256e7d2f": {
+      "type": "rich-text",
+      "blocks": {
+        "1637710759b35dd957-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Contact Us"
+          }
+        },
+        "1637710759b35dd957-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><strong>EMAIL:</strong><br/><a href=\"mailto:Support@MadsonOfAmerica.com\" title=\"mailto:Support@MadsonOfAmerica.com\">Support@MadsonOfAmerica.com</a><br/><br/><strong>PHONE: </strong></p><p><a href=\"tel:+18882731664\" title=\"tel:+18882731664\">1-888-273-1664</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "1637710759b35dd957-0",
+        "1637710759b35dd957-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "163581071380af7d0a": {
+      "type": "text-columns",
+      "blocks": {
+        "163581071380af7d0a-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "163581071380af7d0a-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "163581071380af7d0a-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "163581071380af7d0a-0",
+        "163581071380af7d0a-1",
+        "163581071380af7d0a-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "1635810720995aed0f": {
+      "type": "slideshow",
+      "blocks": {
+        "1635810720995aed0f-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Endless\npossibilities.",
+            "title_size": 80,
+            "subheading": "Bring your brand to life",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "1635810720995aed0f-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "1635810720995aed0f-0",
+        "1635810720995aed0f-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "300px",
+        "parallax": false,
+        "style": "dots",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "1635810661a6693bea": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "faq-0": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Orders",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "faq-1": {
+          "type": "question",
+          "settings": {
+            "title": "What if I need to cancel or change my order?",
+            "text": "<p>All orders placed on MadsonOfAmerica.com are processed quickly. We will do our best to accommodate your requests. The fastest way to do this is to contact us is by emailing: Support@MadsonOfAmerica.com or call<a href=\"tel:+18882731664\">1-888-273-1664</a>. When emailing please put “Change Order” in the subject line.</p>"
+          }
+        },
+        "faq-2": {
+          "type": "question",
+          "settings": {
+            "title": "How long will it take to ship my order?",
+            "text": "<p>For all items that don't have prescription will be shipped the same day or next business day. Our shipping methods include: UPS, FedEx or USPS. Please allow a reasonable amount of processing and shipping times. This usually occurs within 7 days of purchase depending on your shipping region. Due to the COVID 19 pandemic, some shipping carriers will take longer than expected. </p><p></p><p>For prescription eyeglasses, we will ship them within 7 to 10 days after we receive your prescription details. To expedite the process - please be sure to email in your prescription and pupillary distance (PD) after your orders been placed. You can email this information into our customer service team at: support@MadsonOfAmerica.com</p>"
+          }
+        },
+        "faq-4": {
+          "type": "question",
+          "settings": {
+            "title": "What's the status of my order?",
+            "text": "<p>After you place your order, you will receive an email confirmation from our website. When you order has been shipped you will receive and email (or a text message) with your tracking number. You can use the tracking number to get the most up to date information. If you have any questions, please email us at: Support@MadsonOfAmerica.com</p>"
+          }
+        },
+        "3ddce530-dbc8-465d-ab52-2f8d000e513c": {
+          "type": "question",
+          "settings": {
+            "title": "How do I set up an exchange or return?",
+            "text": "<p>To exchange or set up a return, please contact Customer Service at: Support@MadsonOfAmerica.com. They will give you Return Authorization Number. </p>"
+          }
+        },
+        "c93b38e8-e12e-4ecb-b9b8-9b5eda05d05d": {
+          "type": "question",
+          "settings": {
+            "title": "What is your Warranty Policy?",
+            "text": "<p>MADSON products are made with the best engineering and materials available. All MADSON frames are guaranteed against fault in manufacturing materials and workmanship. If your frames are damaged as a result of a manufacturing defect, we will gladly replace them at no extra charge. If the damage is not because of a manufacturing defect, please contact us at: Support@MadsonOfAmerica.com, MADSON will offer a replacement of the same or similar style at a reasonable charge. ALL AUTHORIZED DEALERS (retail stores) will direct you to our website and our Customer Service Department. IMPORTANT: MADSON DOES NOT REPLACE OR WARRANTY SCRATCHED LENSES.</p>"
+          }
+        },
+        "faq-3": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Returns",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "5cb8b028-c021-4040-8391-2db729ac4477": {
+          "type": "question",
+          "settings": {
+            "title": "Do you sell replacement lenses for my existing frames?",
+            "text": "<p>Unfortunately, we do not sell replacement lenses. In order to ensure the lenses fit and frame integrity is maintained, we do the lens and frame assembly in house. But feel free to email us, and we will see what we can do to help you out. Email: Support@MadsonOfAmerica.com</p>"
+          }
+        },
+        "a8852d8c-8e29-4f0c-b252-77762d5c9665": {
+          "type": "question",
+          "settings": {
+            "title": "What is your Return Policy?",
+            "text": "<p>All products ordered from MadsonOfAmerica.com can be returned up to 60 days from the date of purchase. For the items to be successfully returned, the items must be returned in original packaging and accompanied by a return authorization number. To get a Return Authorization Number, please contact Customer Service at: Support@MadsonOfAmerica.com. Refunds will be issued via the form of the original payment.</p>"
+          }
+        },
+        "74cf196d-6996-4bb5-b5bf-5c8adfcc6783": {
+          "type": "question",
+          "settings": {
+            "title": "What do I need to order prescription lenses?",
+            "text": "<p>When you place your prescription order, you will have the option to upload a picture of your prescription or send it to us later. 1. If you want to send it to us later, please email in a copy of your prescription to: Support@MadsonOfAmerica.com In the email, please include your name and order number. 2. We will also need your pupillary distance (PD). Most likely the optician who gave you your prescription should have this on file, and should give this to you over the phone. If not, you can send us a photo so we can measure it for you. <a href=\"https://madsonofamerica.com/pages/prescription-instructions\" title=\"Prescription Instructions\">Click here to see an example of how we measure pupillary distance (PD)</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-0",
+        "faq-1",
+        "faq-2",
+        "faq-4",
+        "3ddce530-dbc8-465d-ab52-2f8d000e513c",
+        "c93b38e8-e12e-4ecb-b9b8-9b5eda05d05d",
+        "faq-3",
+        "5cb8b028-c021-4040-8391-2db729ac4477",
+        "a8852d8c-8e29-4f0c-b252-77762d5c9665",
+        "74cf196d-6996-4bb5-b5bf-5c8adfcc6783"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "1637299057b9704467": {
+      "type": "faq",
+      "blocks": {
+        "0b55ca07-62f6-44e0-b099-46d7b73280dd": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer a prescription service?",
+            "text": "<p>Yes, we do.<br/>1. Select Lenses <em>(Prescription Lenses or Reader Lenses)</em>.<br/>2. Select the type of Prescription Lenses <em>(Single Vision or Progressive)</em>.<br/>3. Select the lens material.<br/>4. Select the best way to give us a copy of your prescription (Upload a copy or send it to us later).</p>"
+          }
+        },
+        "46e3b3f7-eac3-42f8-84e9-9dc23f925cdc": {
+          "type": "question",
+          "settings": {
+            "title": "What do I need to order prescription lenses?",
+            "text": "<p>When you place your prescription order, you will have the option to upload a picture of your prescription or send it to us later. 1. If you want to send it to us later, please email in a copy of your prescription to: Support@MadsonOfAmerica.com In the email, please include your name and order number. 2. We will also need your pupillary distance (PD). Most likely the optician who gave you your prescription should have this on file, and should give this to you over the phone. If not, you can send us a photo so we can measure it for you. <a href=\"https://madsonofamerica.com/pages/prescription-instructions\" title=\"Prescription Instructions\">Click here to see an example of how we measure pupillary distance (PD)</a>.</p>"
+          }
+        },
+        "1637299057f435bd1a-1": {
+          "type": "question",
+          "settings": {
+            "title": "What is PD (pupillary distance)?",
+            "text": "<p>Your PD is used to make the prescription lenses. Your PD (pupillary distance) is the distance in millimeters between your pupils. <br/>Most likely the optician who gave you your prescription should have this on file, and should give this to you over the phone. If not, you can send us a photo so we can measure it for you. <a href=\"https://madsonofamerica.com/pages/prescription-instructions\" title=\"Prescription Instructions\">Click here to see an example of how we measure pupillary distance (PD)</a>.</p>"
+          }
+        },
+        "200fc845-66fe-46a6-8992-67d7e86c7383": {
+          "type": "question",
+          "settings": {
+            "title": "How long will it take to ship prescription my order?",
+            "text": "<p>For prescription eyeglasses, we will ship them within 7 to 10 days after we receive your prescription details. To expedite the process - please be sure to email in your prescription and pupillary distance (PD) after your orders been placed. You can email this information into our customer service team at: support@MadsonOfAmerica.com</p><p></p><p>Our shipping methods include: UPS, FedEx or USPS. Please allow a reasonable amount of processing and shipping times. Due to COVID-19, shipping time maybe delayed by the shipping carrier.</p>"
+          }
+        },
+        "01e2b36d-1a06-4f90-8a14-100dcb203237": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer “light-responsive” lenses like “Transitions®”?",
+            "text": "<p>Yes,we offer light-responsive lenses. These lenses will go from clear indoors to grey in the outdoors by responding to UV rays. Click on Eyeglasses from the menu above and select a frame with clear lenses.</p>"
+          }
+        },
+        "e57644b9-5d70-481d-be69-6dae20861f09": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer “Progressive” lenses?",
+            "text": "<p>Yes, we do offer progressive lenses. These lenses are for reading and long-distance vision and everything in between. If your prescription has a value in the “Add” column then you have the option to get progressive lenses. </p>"
+          }
+        },
+        "1c51175c-ec48-4d43-b542-82d6ac3c787c": {
+          "type": "question",
+          "settings": {
+            "title": "Do you make readers?",
+            "text": "<p>Yes, select “Reader Lenses”, then select Add to Cart.<br/>Then select your magnification <em>(example +1.5).</em></p>"
+          }
+        },
+        "62ae261b-7ea0-4aec-9833-7c95fae74794": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer bifocals?",
+            "text": "<p>We currently don’t offer this as an option directly from the website but email us at <a href=\"mailto:Support@MadsonOfAmerica.com\">Support@MadsonOfAmerica.com</a> and we will do our best to help you. </p>"
+          }
+        },
+        "f7e3bfb7-dfbc-4445-a8b5-d3597cb7db56": {
+          "type": "question",
+          "settings": {
+            "title": "What type of material do you use for prescription lenses?",
+            "text": "<p>For all clear prescription lenses we with use polycarbonate or CR39 material based on the frame material.<br/><br/>For all sunglass prescription lenses, we use polycarbonate material which is the most lightweight and impact-resistant lenses available in the market.</p>"
+          }
+        },
+        "65a86d94-6d7b-4fd6-a58e-c0e02cdd413c": {
+          "type": "question",
+          "settings": {
+            "title": "Can I get just the frames with clear non-prescription lenses?",
+            "text": "<p>Can I get just the frames with clear non-prescription lenses?</p>"
+          }
+        },
+        "1637299057f435bd1a-0": {
+          "type": "question",
+          "settings": {
+            "title": "Can I just buy the frames and have my own Eye Doctor put in prescription lenses?",
+            "text": "<p>Yes! You may want to check with your Eye Doctor first, but then you can email us at <a href=\"mailto:Support@MadsonOfAmerica.com\">Support@MadsonOfAmerica.com</a> or call us at 1-888-273-1664 and we will be able to put together a custom order for you. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "0b55ca07-62f6-44e0-b099-46d7b73280dd",
+        "46e3b3f7-eac3-42f8-84e9-9dc23f925cdc",
+        "1637299057f435bd1a-1",
+        "200fc845-66fe-46a6-8992-67d7e86c7383",
+        "01e2b36d-1a06-4f90-8a14-100dcb203237",
+        "e57644b9-5d70-481d-be69-6dae20861f09",
+        "1c51175c-ec48-4d43-b542-82d6ac3c787c",
+        "62ae261b-7ea0-4aec-9833-7c95fae74794",
+        "f7e3bfb7-dfbc-4445-a8b5-d3597cb7db56",
+        "65a86d94-6d7b-4fd6-a58e-c0e02cdd413c",
+        "1637299057f435bd1a-0"
+      ],
+      "settings": {
+        "title": "Prescription FAQs"
+      }
+    },
+    "163771072458c7caf8": {
+      "type": "text-columns",
+      "blocks": {
+        "163771072477f67554-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "163771072477f67554-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "163771072477f67554-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "163771072477f67554-0",
+        "163771072477f67554-1",
+        "163771072477f67554-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "1637710759256e7d2f",
+    "163581071380af7d0a",
+    "1635810720995aed0f",
+    "1635810661a6693bea",
+    "main",
+    "faq",
+    "1637299057b9704467",
+    "163771072458c7caf8"
+  ]
+}

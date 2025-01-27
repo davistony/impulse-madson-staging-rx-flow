@@ -1,0 +1,101 @@
+<div class="promo-collections"
+  data-section-id="{{ section.id }}"
+  data-section-type="promo-grid">
+  {%- unless section.settings.full_width -%}
+    <div class="page-width">
+  {%- endunless -%}
+
+  {%- render 'promo-collections', section: section, collection_page: false -%}
+
+  {%- if section.blocks.size == 0 -%}
+    <div class="page-width text-center">
+      <div class="rte">
+        <p>
+          {{ 'home_page.onboarding.no_content' | t }}
+        </p>
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- unless section.settings.full_width -%}
+    </div>
+  {%- endunless -%}
+  
+  
+</div>
+
+{% schema %}
+{
+  "name": "Promo Collections",
+  "max_blocks": 15,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.promo-grid.settings.full_width.label",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "gutter_size",
+      "label": "t:sections.promo-grid.settings.gutter_size.label",
+      "default": 20,
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "space_above",
+      "label": "t:sections.promo-grid.settings.space_above.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "space_below",
+      "label": "t:sections.promo-grid.settings.space_below.label",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Promo Collections",
+      "blocks": [
+        {
+          "type": "advanced",
+          "settings": {
+         
+          }
+        },
+        {
+          "type": "advanced",
+          "settings": {
+          
+          }
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "advanced",
+      "name": "t:sections.promo-grid.blocks.advanced.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "cta_text1",
+          "label": "t:sections.promo-grid.blocks.advanced.settings.cta_text1.label",
+          "default": "Shop This"
+        },
+        {
+          "type": "url",
+          "id": "cta_link1",
+          "label": "t:sections.promo-grid.blocks.advanced.settings.cta_link1.label"
+        }
+      
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,133 @@
+{%- assign show_announcement = false -%}
+{%- assign announcement_block_count = 0 -%}
+{%- for block in section.blocks -%}
+  {%- if block.type == 'announcement' or block.type == 'timer' -%}
+    {%- assign show_announcement = true -%}
+    {%- assign announcement_block_count = announcement_block_count | plus: 1 -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{% if show_announcement %}
+  <div class="announcement-bar">
+    <div class="page-width">
+      <div class="slideshow-wrapper">
+        <button type="button" class="visually-hidden slideshow__pause" data-id="{{ section.id }}" aria-live="polite">
+          <span class="slideshow__pause-stop">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-pause" viewBox="0 0 10 13"><g fill="#000" fill-rule="evenodd"><path d="M0 0h3v13H0zM7 0h3v13H7z"/></g></svg>
+            <span class="icon__fallback-text">{{ 'sections.slideshow.pause_slideshow' | t }}</span>
+          </span>
+          <span class="slideshow__pause-play">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-play" viewBox="18.24 17.35 24.52 28.3"><path fill="#323232" d="M22.1 19.151v25.5l20.4-13.489-20.4-12.011z"/></svg>
+            <span class="icon__fallback-text">{{ 'sections.slideshow.play_slideshow' | t }}</span>
+          </span>
+        </button>
+
+        <div
+          id="AnnouncementSlider"
+          class="announcement-slider"
+          data-compact="{{ section.settings.announcement_compact }}"
+          data-block-count="{{ announcement_block_count }}">
+          {%- assign slide_index = 0 -%}
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'announcement' -%}
+              <div
+                id="AnnouncementSlide-{{ block.id }}"
+                class="announcement-slider__slide"
+                data-index="{{ slide_index }}"
+                {{ block.shopify_attributes }}>
+                {%- if block.settings.link != blank -%}
+                  <a class="announcement-link" href="{{ block.settings.link }}">
+                {%- endif -%}
+                  {%- if block.settings.text != blank -%}
+                    <span class="announcement-text">{{ block.settings.text }}</span>
+                  {%- endif -%}
+                  {%- if block.settings.link_text != blank -%}
+                    <span class="announcement-link-text">{{ block.settings.link_text }}</span>
+                  {%- endif -%}
+                {%- if block.settings.link != blank -%}
+                  </a>
+                {%- endif -%}
+              </div>
+              {%- assign slide_index = slide_index | plus: 1 -%}
+            {%- endif -%}
+         {% if block.type == 'timer' %}
+        <div class="countdown__block countdown__block--{{ block.type }}" {{ block.shopify_attributes }}>
+            {% if block.settings.reset_counter %}
+                {% assign current_time = "now" | date: "%s" %}
+                {% assign reset_time = current_time | plus: 43140 %} 
+            {% else %}
+                {% assign reset_time = "end_time" %}
+            {% endif %}
+
+            <countdown-timer
+                data-year="{{ block.settings.year }}"
+                data-month="{{ block.settings.month }}"
+                data-day="{{ block.settings.day }}"
+                data-hour="{{ block.settings.hour }}"
+                data-minute="{{ block.settings.minute }}"
+                data-hide-timer="{{ block.settings.hide_timer }}"
+                data-complete-message="{{ block.settings.text }}"
+                data-reset-counter="{{ block.settings.reset_counter }}"
+            >
+
+              <div class="timer-flex-main">
+                <div class="countdown__heading"> {{ block.settings.timer-heading }} </div>
+        
+              <div>
+              <div class="timer-flex">
+
+              <div class="timer-text">  
+
+                {% if block.settings.hide_timer_text %}
+
+                {% else %}
+
+                {{ block.settings.timer-text }}
+
+
+                {% endif %}
+
+                
+                
+              </div>
+
+              
+              <div class="countdown__display countdown__display--visible" data-time-display>
+                <div class="countdown__display-block">
+                  <h2 class="{% if section.blocks.size == 1 %}h1{% elsif section.blocks.size == 3 and button_block_hidden == false %}h3{% endif %}" date-days-placeholder>12</h2>
+                 &nbsp<span>DAYS</span>
+                </div>
+                <div class="countdown__display-block">
+                  <h2 class="{% if section.blocks.size == 1 %}h1{% elsif section.blocks.size == 3 and button_block_hidden == false %}h3{% endif %}" date-hours-placeholder>12</h2>
+                  &nbsp<span>Hrs</span>
+                </div>
+                <div class="countdown__display-block">
+                  <h2 class="{% if section.blocks.size == 1 %}h1{% elsif section.blocks.size == 3 and button_block_hidden == false %}h3{% endif %}" date-minutes-placeholder>12</h2>
+                &nbsp<span>MIN</span>
+                </div>
+                <div class="countdown__display-block">
+                  <h2 class="{% if section.blocks.size == 1 %}h1{% elsif section.blocks.size == 3 and button_block_hidden == false %}h3{% endif %}" date-seconds-placeholder>12</h2>
+                  &nbsp<span>SEC</span>
+                </div>
+              </div>
+              </div>
+               <div class="countdown__subheading"> {{ block.settings.timer-subheading }} </div>
+              
+              
+              {% if block.settings.text != blank %}
+                <div class="countdown__timer-message" data-message-placeholder>{{ block.settings.text }}</div>
+              {% endif %}
+            </countdown-timer>
+        </div>
+          </div>
+            </div>
+        {% endif %}
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endif %}
+
+            

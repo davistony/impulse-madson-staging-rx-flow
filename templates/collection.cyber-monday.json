@@ -1,0 +1,187 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": false,
+        "collection_image_enable": false,
+        "parallax": false
+      }
+    },
+    "163734108504564194": {
+      "type": "slideshow",
+      "blocks": {
+        "163734108599388279-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Cyber Monday",
+            "title_size": 65,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/sunglass_collection_desktop_TEMPLATE.jpg",
+            "image_mobile": "shopify://shop_images/kasey_mobile_test.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "163734108599388279-0"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "300px",
+        "parallax": false,
+        "style": "dots",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "1638167082e452f49b": {
+      "type": "rich-text",
+      "blocks": {
+        "16381670825d096f40-0": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "16381670825d096f40-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><strong>CYBER MONDAY IS OVER</strong><br/>------------------------<br/>See you next year. <br/><br/>The Best Deals<br/>*Limited Quantity Available</p>"
+          }
+        }
+      },
+      "block_order": [
+        "16381670825d096f40-0",
+        "16381670825d096f40-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 2,
+            "rows_per_page": 20,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "1638166604bb6f46f3": {
+      "type": "featured-collections",
+      "blocks": {
+        "1638166604803e0e40-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "sunglasses",
+            "title": "All Sunglasses",
+            "focal_point": "center center"
+          }
+        },
+        "1638166604803e0e40-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "eyeglasses",
+            "title": "All Eyeglasses",
+            "focal_point": "center center"
+          }
+        },
+        "1638166604803e0e40-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "blue-light",
+            "title": "All Blue Light",
+            "focal_point": "center center"
+          }
+        },
+        "1638166604803e0e40-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "snow-goggles",
+            "title": "All Goggles",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "1638166604803e0e40-0",
+        "1638166604803e0e40-1",
+        "1638166604803e0e40-2",
+        "1638166604803e0e40-3"
+      ],
+      "settings": {
+        "title": "Shop",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    },
+    "163816685869917c14": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/madson-collection-ansi.jpg",
+        "image_width": 700,
+        "subtitle": "Safety IN STYLe",
+        "title": "Manic Ansi Z87+",
+        "text": "",
+        "button_label": "Shop Manic ANSI",
+        "button_link": "shopify://products/ansi-z87-black-on-black-grey",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "163734108504564194",
+    "1638167082e452f49b",
+    "main-collection",
+    "1638166604bb6f46f3",
+    "163816685869917c14"
+  ]
+}

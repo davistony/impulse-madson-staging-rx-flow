@@ -1,0 +1,137 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "settings": {}
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Popular picks",
+        "home_featured_products": "",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "163778346095c9744c": {
+      "type": "featured-product",
+      "blocks": {
+        "1637783460d4a972cd-0": {
+          "type": "price",
+          "settings": {}
+        },
+        "1637783460d4a972cd-1": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "1637783460d4a972cd-2": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "1637783460d4a972cd-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "1637783460d4a972cd-0",
+        "1637783460d4a972cd-1",
+        "1637783460d4a972cd-2",
+        "1637783460d4a972cd-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "featured_product": "madson-sunglass-hard-case",
+        "divider": true,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "small",
+        "product_zoom_enable": false,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "full",
+        "enable_video_looping": false,
+        "product_video_style": "muted"
+      }
+    },
+    "16377846995e885e60": {
+      "type": "promo-grid",
+      "blocks": {
+        "57d2bc9d-1de2-4e55-9e15-22e4e149a212": {
+          "type": "banner",
+          "settings": {
+            "heading": "Hard Case",
+            "text": "$15",
+            "link": "shopify://products/madson-sunglass-hard-case",
+            "label": "Add",
+            "image": "shopify://shop_images/madson_hardcase_zipper_angle_square_crop.jpg",
+            "color_tint": "#000000",
+            "color_tint_opacity": 4,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "57d2bc9d-1de2-4e55-9e15-22e4e149a212"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "82fc43a5-abdb-4ad2-891b-8cc1c491f949": {
+      "type": "featured-collection-single",
+      "settings": {
+        "title": "Top Picks",
+        "home_featured_products": "featured",
+        "per_row": 3,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "recently-viewed",
+    "featured-collection",
+    "163778346095c9744c",
+    "16377846995e885e60",
+    "82fc43a5-abdb-4ad2-891b-8cc1c491f949"
+  ]
+}

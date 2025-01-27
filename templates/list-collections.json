@@ -1,0 +1,143 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "list-collections-template",
+      "settings": {
+        "title_enable": true,
+        "display_type": "all",
+        "sort": "alphabetical",
+        "grid": "4"
+      }
+    },
+    "logo-list": {
+      "type": "logo-list",
+      "blocks": {
+        "logo1": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo2": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo3": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo4": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo5": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo6": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo1",
+        "logo2",
+        "logo3",
+        "logo4",
+        "logo5",
+        "logo6"
+      ],
+      "settings": {
+        "title": "Our brands",
+        "logo_opacity": 76,
+        "divider": false
+      }
+    },
+    "d386680b-82df-4917-898f-de5ec48861ef": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "43c26642-bfbc-47e5-b303-7cd5a282a667": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--14715399045207__43c26642-bfbc-47e5-b303-7cd5a282a667-1668551825539d0a8d-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--14715399045207__43c26642-bfbc-47e5-b303-7cd5a282a667-1668551825539d0a8d-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--14715399045207__43c26642-bfbc-47e5-b303-7cd5a282a667-1668551825539d0a8d-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--14715399045207__43c26642-bfbc-47e5-b303-7cd5a282a667-1668551825539d0a8d-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14715399045207__43c26642-bfbc-47e5-b303-7cd5a282a667-1668551825539d0a8d-0",
+        "template--14715399045207__43c26642-bfbc-47e5-b303-7cd5a282a667-1668551825539d0a8d-1",
+        "template--14715399045207__43c26642-bfbc-47e5-b303-7cd5a282a667-1668551825539d0a8d-2",
+        "template--14715399045207__43c26642-bfbc-47e5-b303-7cd5a282a667-1668551825539d0a8d-3"
+      ],
+      "settings": {
+        "title": "Collection list",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "logo-list",
+    "d386680b-82df-4917-898f-de5ec48861ef",
+    "43c26642-bfbc-47e5-b303-7cd5a282a667"
+  ]
+}

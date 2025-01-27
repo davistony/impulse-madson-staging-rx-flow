@@ -1,0 +1,326 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "promo-grid": {
+      "type": "promo-grid",
+      "blocks": {
+        "banner": {
+          "type": "banner",
+          "settings": {
+            "heading": "Banner promotion",
+            "text": "Add the details of your promotion in smaller text",
+            "link": "",
+            "label": "Shop now",
+            "color_tint": "#e95454",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        },
+        "advanced": {
+          "type": "advanced",
+          "disabled": true,
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "image": "shopify://shop_images/mckenna_beach_opening_shot.jpg",
+            "video_url": "",
+            "width": "100",
+            "height": 500,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "top",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "banner",
+        "advanced"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": false
+      }
+    },
+    "1637361785673e12ff": {
+      "type": "slideshow",
+      "blocks": {
+        "163736178568e224dc-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "INTRODUCING",
+            "title": "June First",
+            "title_size": 80,
+            "subheading": "Women's Collection",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/june-first-collection-header-desktop.jpg",
+            "image_mobile": "shopify://shop_images/june-first-collection-header-mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "top center"
+          }
+        }
+      },
+      "block_order": [
+        "163736178568e224dc-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "400px",
+        "parallax": true,
+        "style": "dots",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "hero_video_zUKaRy": {
+      "type": "hero-video",
+      "settings": {
+        "title": "Women's\nCollection",
+        "title_size": 65,
+        "subheading": "JUNE FIRST",
+        "link_text": "Shop Now",
+        "link": "https://june-first.com/",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/df98a05fed55468eb9e6aabcad275d37.mp4",
+        "overlay_opacity": 0,
+        "section_height": "450px",
+        "mobile_height": "400px"
+      }
+    },
+    "16373633257799b109": {
+      "type": "rich-text",
+      "blocks": {
+        "16373633254c32ba6c-0": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "16373633254c32ba6c-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Welcome to our Women's Collection, June First. We are here to bring the unique charm and exclusivity of boutique fashion directly to you through our luxury high-end eyewear.<br/><br/><a href=\"https://june-first.com/\" target=\"_blank\" title=\"https://june-first.com/\">SHOP NOW</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "16373633254c32ba6c-0",
+        "16373633254c32ba6c-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "163736279514617f8e": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/june-first-miss-lennon.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Miss Lennon",
+        "text": "<p>All you need is love... The Miss Lennon is a classic round frame with metal temples with exquisite details.</p>",
+        "button_label": "Shop Now",
+        "button_link": "https://june-first.com/products/miss-lennon-tortoise-grey-lenses",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "163736384534912eb9": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/june-first-jinx.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Jinx",
+        "text": "<p>Jinx is an oversize frame with a hint of a cat-eye shape and a classic silhouette with metal details on the bridge of the frame. </p>",
+        "button_label": "SHOP NOW",
+        "button_link": "https://june-first.com/products/jinx-black-matte-grey-lenses",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "163736382111df71c0": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/june-first-blush.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Blush",
+        "text": "<p>The Blush is an oversized squarish frame and sleek stainless steel temples attract attention while providing comfort and durability.</p>",
+        "button_label": "SHOP NOW",
+        "button_link": "https://june-first.com/products/blush-black-gloss-grey-lenses",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "1637363966c5965781": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/june-first-felina.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Felina",
+        "text": "<p>Sexy and smart. The Felina design is inspired by the 1950's with a modern take on classic cat-eye sunglasses.</p>",
+        "button_label": "SHOP NOW",
+        "button_link": "https://june-first.com/products/felina-champagne-g15-lenses",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "text_and_image_3UhzPA": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/June-First-Accent-Gold-Black-G15-Polarized-07.jpg",
+        "image2": "shopify://shop_images/accent-june-first-bleu-jacket-1800x1800.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Accent",
+        "text": "<p>Discover the high-quality metal frame with classic oval-round shape and flattering lenses.</p>",
+        "button_label": "SHOP ACCENT",
+        "button_link": "https://june-first.com/products/accent-gold-g15-lenses",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "text_and_image_9YGgqR": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/June-First-Luna-BlackGloss-G15-polarized-04.jpg",
+        "image2": "shopify://shop_images/luna-mckenna-gallery-4.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Luna",
+        "text": "<p>Timeless glamour crafted in Italy, flattering for all face shapes, and a nod to Hollywood's golden era.</p>",
+        "button_label": "SHOP LUNA",
+        "button_link": "https://june-first.com/products/luna-black-gloss-g15-lenses",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "16373649869abd5af5": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/june-first-about-collection-towell.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Our Story",
+        "text": "<p> June First was founded on the idea of bringing the charm and exclusivity of boutique fashion directly to you through our luxury high-end eyewear collection. </p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "163736501290e3d903": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/june-first-collection-name.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Why \"June First\"?",
+        "text": "<p>Inspired by Hollywood's golden age, we blend the styles of the past and present. June First also happens to be Marilyn Monroe's birthday, adding a special touch of iconic allure to our brand.</p>",
+        "button_label": "LEARN MORE",
+        "button_link": "https://june-first.com/",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "left",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "promo-grid",
+    "1637361785673e12ff",
+    "hero_video_zUKaRy",
+    "16373633257799b109",
+    "main-collection",
+    "163736279514617f8e",
+    "163736384534912eb9",
+    "163736382111df71c0",
+    "1637363966c5965781",
+    "text_and_image_3UhzPA",
+    "text_and_image_9YGgqR",
+    "16373649869abd5af5",
+    "163736501290e3d903"
+  ]
+}

@@ -1,0 +1,332 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": true,
+        "parallax_direction": "top"
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "blocks": {
+        "banner": {
+          "type": "banner",
+          "settings": {
+            "heading": "Banner promotion",
+            "text": "Add the details of your promotion in smaller text",
+            "link": "",
+            "label": "Shop now",
+            "color_tint": "#e95454",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        },
+        "advanced": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "100",
+            "height": 500,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "banner",
+        "advanced"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": false
+      }
+    },
+    "0ed2e454-05b3-4650-96d1-29885f47fc56": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14718308384855__0ed2e454-05b3-4650-96d1-29885f47fc56-1668554337a73d2869-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Enter to Win",
+            "title_size": 80,
+            "subheading": "Madson x Black Sabbath Bundle",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/sabbath-bundle-hero-2880x1620.jpg",
+            "image_mobile": "shopify://shop_images/sabbath-bundle-hero-mobile-900x900.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--14718308384855__0ed2e454-05b3-4650-96d1-29885f47fc56-1668554337a73d2869-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14718308384855__0ed2e454-05b3-4650-96d1-29885f47fc56-1668554337a73d2869-0",
+        "template--14718308384855__0ed2e454-05b3-4650-96d1-29885f47fc56-1668554337a73d2869-1"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "250px",
+        "parallax": false,
+        "style": "minimal",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "84ad9537-9212-47db-8634-ab7b53b4d1bf": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14718308384855__84ad9537-9212-47db-8634-ab7b53b4d1bf-1668554337901a498f-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"klaviyo-form-TeScan\"></div>",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "template--14718308384855__84ad9537-9212-47db-8634-ab7b53b4d1bf-1668554337901a498f-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "c14e0210-61df-45b4-9a49-214ce0b3fddc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14718308384855__c14e0210-61df-45b4-9a49-214ce0b3fddc-1668554537edc7eed0-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>After you submit the form, you're all set. <br/><a href=\"https://madsonofamerica.com/pages/madson-x-black-sabbath-bundle-giveaway-rules\" target=\"_blank\" title=\"https://madsonofamerica.com/pages/madson-x-black-sabbath-bundle-giveaway-rules\">Contest Rules</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14718308384855__c14e0210-61df-45b4-9a49-214ce0b3fddc-1668554537edc7eed0-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "8d503575-dda5-49c8-841d-daa7ba24023f": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14718308384855__8d503575-dda5-49c8-841d-daa7ba24023f-166855459659dafb3c-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/black-sabbath-graphic-bundle-1065x1420.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>COMING SOON</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14718308384855__8d503575-dda5-49c8-841d-daa7ba24023f-166855459659dafb3c-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/black-sabbath-goggle-1065x1420.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>SNOW GOGGLE</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14718308384855__8d503575-dda5-49c8-841d-daa7ba24023f-166855459659dafb3c-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/black-sabbath-beanie-bundle-1065x1420.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>BEANIE</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "d3099390-c449-4749-b913-0d8682a790f9": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/black-sabbath-classico-bundle-1065x1420.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>SUNGLASSES</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "d9b92bf2-e468-423a-a0fc-c94b915aebb2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/black-sabbath-hat-bundle-1065x1420.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>TRUCKER HAT</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "2f74424b-812c-4928-af57-0c8fefdf5bca": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/black-sabbath-leather-belt-bundle-1065x1420.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>LEATHER BELT</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14718308384855__8d503575-dda5-49c8-841d-daa7ba24023f-166855459659dafb3c-0",
+        "template--14718308384855__8d503575-dda5-49c8-841d-daa7ba24023f-166855459659dafb3c-1",
+        "template--14718308384855__8d503575-dda5-49c8-841d-daa7ba24023f-166855459659dafb3c-2",
+        "d3099390-c449-4749-b913-0d8682a790f9",
+        "d9b92bf2-e468-423a-a0fc-c94b915aebb2",
+        "2f74424b-812c-4928-af57-0c8fefdf5bca"
+      ],
+      "settings": {
+        "title": "Limited Edition Bundle",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "60d27bc7-9ceb-42e5-a7a1-027ee7b92eed": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/madson-markup-graph-polarized-2_1080x_8822d4e1-84c9-4411-8809-ac09dbf42653.jpg",
+        "image_width": 700,
+        "subtitle": "ABOUT MADSON",
+        "title": "QUALITY & INTEGRITY",
+        "text": "<p>Our products are made with the same top-quality materials as the other premium brands. But we keep it simple and avoid the inflated mark-ups. Madson is built on the tried and true promise of delivering premium quality at an affordable price.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 2,
+            "rows_per_page": 20,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": false,
+        "collapsed": false,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": false
+      }
+    },
+    "c48a1722-513c-434d-9535-886cab3735eb": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Some of our favorite styles",
+        "home_featured_products": "featured",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "promo-grid",
+    "0ed2e454-05b3-4650-96d1-29885f47fc56",
+    "84ad9537-9212-47db-8634-ab7b53b4d1bf",
+    "c14e0210-61df-45b4-9a49-214ce0b3fddc",
+    "8d503575-dda5-49c8-841d-daa7ba24023f",
+    "60d27bc7-9ceb-42e5-a7a1-027ee7b92eed",
+    "main-collection",
+    "c48a1722-513c-434d-9535-886cab3735eb"
+  ]
+}

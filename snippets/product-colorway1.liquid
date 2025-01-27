@@ -1,0 +1,26 @@
+{% comment %}
+Example of use:
+
+{% assign product_collection = collection %}
+{% include 'product-grid-item' with product %}
+
+ALSO: Feel free to change the 'large' just below here to 'grande' if you require giant product images
+{% endcomment %}
+
+{% assign product_block_image_size = 'compact' %}
+
+{% if product_collection %}
+    {% capture product_url %}{{ product-colorway1.url | within: product_collection }}{% endcapture %}
+{% else %}
+    {% capture product_url %}{{ product-colorway1.url }}{% endcapture %}
+{% endif %}
+
+<li data-product-id="{{ product.id }}" class="list-colorways__item {% if relprod.handle == product.handle %}current{%endif%} ">
+  {% assign colorway_img_url= relprod.description | replace: " / ", "-" | replace: " ", "-" | downcase | append:'.png' | strip_html %}
+            <a href="{{ product_url }}">
+
+             <img src="{{ relprod.metafields.custom.product_color_swatch | image_url  }}"/>
+    <!-- <label class="img-caption">{{ product-colorway1.variants[0].title | escape }}</label>-->
+            </a>
+  
+</li>

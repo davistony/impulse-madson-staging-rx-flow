@@ -1,0 +1,968 @@
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+
+  unless thumbnail_position
+    assign thumbnail_position = 'beside'
+  endunless
+
+  assign product_zoom_size = '1800x1800'
+  assign product_image_size = '620x'
+
+  case image_container_width
+    when 'small'
+      assign product_image_width = 'medium-up--two-fifths'
+      assign product_description_width = 'medium-up--three-fifths'
+      assign product_image_size = '480x'
+    when 'medium'
+      assign product_image_width = 'medium-up--one-half'
+      assign product_description_width = 'medium-up--one-half'
+      assign product_image_size = '620x'
+    when 'large'
+      assign product_image_width = 'medium-up--three-fifths'
+      assign product_description_width = 'medium-up--two-fifths'
+      assign product_image_size = '740x'
+  endcase
+
+  assign product_img_structure = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
+-%}
+
+<div id="ProductSection-{{ section_id }}-{{ product.id }}"
+  class="product-section"
+  data-section-id="{{ section_id }}"
+  data-product-id="{{ product.id }}"
+  data-section-type="product"
+  data-product-handle="{{ product.handle }}"
+  data-product-title="{{ product.title | escape }}"
+  data-product-url="{{ product.url | within: collection }}"
+  data-aspect-ratio="{{ 100 | divided_by: product.featured_media.aspect_ratio }}"
+  data-img-url="{{ product_img_structure }}"
+  {% unless isModal %}
+    data-history="true"
+  {% endunless %}
+  data-modal="{{ isModal }}">
+
+  {%- render 'product-template-variables', product: product, current_variant: current_variant -%}
+<div style="display: none;" class="progressGif"><img src="{{'ajax-loader1.gif'| asset_url}}"/></div>
+  <div class="page-content page-content--product">
+    <div class="page-width">
+
+      <div class="grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
+        {%- if image_position == 'left' -%}
+          <div class="grid__item {{ product_image_width }} product-single__sticky">
+            {%- render 'product-images',
+              section_id: section_id,
+              product: product,
+              isModal: isModal,
+              image_position: image_position,
+              product_zoom_enable: product_zoom_enable,
+              product_zoom_size: product_zoom_size,
+              product_image_size: product_image_size,
+              thumbnail_arrows: thumbnail_arrows,
+              thumbnail_position: thumbnail_position,
+              video_looping: video_looping,
+              video_style: video_style
+            -%}
+          </div>
+        {%- endif -%}
+
+        <div class="grid__item {{ product_description_width }}">
+
+          <div class="product-single__meta">
+            <div class="product-block product-block--header">
+              {%- if settings.show_breadcrumbs and isModal != true -%}
+                {%- render 'breadcrumbs' -%}
+              {%- endif -%}
+
+              {%- if settings.vendor_enable -%}
+                <div class="product-single__vendor">
+                  {%- assign vendor_handle = product.vendor | handleize -%}
+                  {%- if collections[vendor_handle] != empty -%}
+                    <a href="{{ routes.collections_url }}/{{ collections[vendor_handle].handle }}">
+                      {{ collections[vendor_handle].title }}
+                    </a>
+                  {%- else -%}
+                    {{ product.vendor | link_to_vendor }}
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+
+              {%- if isModal -%}
+                <p class="h2 product-single__title">
+                  {{ product.title }}
+                </p>
+              {%- else -%}
+                <h1 class="h2 product-single__title">
+                  {%- unless product.empty? -%}
+                    {{ product.title }}
+                  {%- else -%}
+                    {{ 'home_page.onboarding.product_title' | t }}
+                  {%- endunless -%}
+                </h1>
+                   <div class="product-block product-block--price" {{ block.shopify_attributes }}>
+                      {%- assign hide_sale_price = true -%}
+                      {%- if product.compare_at_price_max > product.price -%}
+                        {%- if current_variant.compare_at_price > current_variant.price -%}
+                          {%- assign hide_sale_price = false -%}
+                        {%- endif -%}
+                        <span
+                          data-a11y-price
+                          class="visually-hidden"
+                          aria-hidden="{{ hide_sale_price }}">
+                            {{ 'products.general.regular_price' | t }}
+                        </span>
+                        <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
+                          <span data-compare-price class="product__price product__price--compare">
+                            {%- if current_variant.compare_at_price > current_variant.price -%}
+                              {{ current_variant.compare_at_price | money }}
+                            {%- endif -%}
+                          </span>
+                        </span>
+                        <span data-compare-price-a11y class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+                      {%- else -%}
+                        <span data-a11y-price class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+                      {%- endif -%}
+
+                      <span data-product-price
+                        class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
+                        {%- unless product.empty? -%}
+                          {{ current_variant.price | money }}
+                        {%- else -%}
+                          {{ 1999 | money }}
+                        {%- endunless -%}
+                      </span>
+
+                      {%- if settings.product_save_amount -%}
+                        {%- if settings.product_save_type == 'dollar' -%}
+                          {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}
+                        {%- else -%}
+                          {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round }}%{%- endcapture -%}
+                        {%- endif -%}
+                        <span data-save-price class="product__price-savings{% if hide_sale_price %} hide{% endif %}">
+                          {%- unless hide_sale_price -%}
+                            {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+                          {%- endunless -%}
+                        </span>
+                      {%- endif -%}
+
+                      <div
+                        data-unit-price-wrapper
+                        class="product__unit-price product__unit-price--spacing {% unless current_variant.unit_price_measurement %} hide{% endunless %}">
+                        {%- capture unit_price_base_unit -%}
+                          <span data-unit-base>
+                            {%- if current_variant.unit_price_measurement -%}
+                              {%- if current_variant.unit_price_measurement.reference_value != 1 -%}
+                                {{ current_variant.unit_price_measurement.reference_value }}
+                              {%- endif -%}
+                              {{ current_variant.unit_price_measurement.reference_unit }}
+                            {%- endif -%}
+                          </span>
+                        {%- endcapture -%}
+
+                        <span data-unit-price>{{ current_variant.unit_price | money }}</span>/{{ unit_price_base_unit }}
+                      </div>
+
+                      {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+                        <div class="product__policies rte small--text-center">
+                          {%- if shop.taxes_included -%}
+                            {{ 'products.product.include_taxes' | t }}
+                          {%- endif -%}
+                          {%- if shop.shipping_policy.body != blank -%}
+                            {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                          {%- endif -%}
+                        </div>
+                      {%- endif -%}
+                    </div>
+              {%- endif -%}
+
+              {%- if sku_enable -%}
+                <p data-sku class="product-single__sku">
+                  {%- if current_variant.sku -%}
+                    {{ current_variant.sku }}
+                  {%- endif -%}
+                </p>
+              {%- endif -%}
+            </div>
+
+            <div data-product-blocks>
+              <div class="product-block">
+                <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" style="display:block;">{{ product.metafields.stamped.badge }}</span>
+              </div>
+              {%- capture form_id -%}AddToCartForm-{{ section_id }}-{{ product.id }}{%- endcapture -%}
+              {%- for block in blocks -%}
+                {%- case block.type -%}
+                  {%- when '@app' -%}
+                    {% render block %}
+                  {%- when 'separator' -%}
+                    <div class="product-block"><hr></div>
+                  {%- when 'text' -%}
+                    <div class="product-block" {{ block.shopify_attributes }}>
+                      {{ block.settings.text }}
+                    </div>
+              {%- when 'html' -%}
+                    <div class="product-block custom-content" {{ block.shopify_attributes }}>
+                      {{ block.settings.html }}
+                    </div>
+              {%- when 'framefit' -%}
+                    <div class="product-block product-block--framefit" {{ block.shopify_attributes }}>
+                      <span>FRAME FIT:</span> {{ block.settings.text }}
+                    </div>
+                  {%- when 'tab' -%}
+                    <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
+                      {% assign tab_id = block.id | append: product.id %}
+                      {% capture tab_content %}
+                        {{ block.settings.content }}
+                        {{ block.settings.page.content }}
+                      {% endcapture %}
+                      {%- render 'tab', id: tab_id, title: block.settings.title, content: tab_content, icon1: block.settings.icon -%}
+                    </div>
+                  {%- when 'contact' -%}
+                    <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
+                      {%- render 'tab-contact', block: block -%}
+                    </div>
+              
+                  {%- when 'colorway' -%}
+                    <div class="product-block product-block--colorway" {{ block.shopify_attributes }}>
+                      <div class="colorway-heading">
+                        {{block.settings.text}}
+                      </div>
+                      <div class="prod-desc">{{ product.description }}</div>
+                      
+                            <div class="colorways layout-column-half-center">
+   <!-- <h6 class="list-colorways__title">COLORWAYS</h6>-->
+    <ul class="list-colorways cf">
+           
+                {% assign product_collection = collection %}
+     
+                {% unless product_collection %}
+      
+      {% assign need_new_collection = true %}
+      
+      {% else %}
+    
+      {% assign need_new_collection = false %}
+      
+      {% endunless %}
+                {% if need_new_collection or product_collection.handle == 'all' or product_collection.handle contains 'frontpage' %}
+    
+                    {% for coll in product.collections %}
+                        {% unless coll.handle == 'all' or coll.handle contains 'frontpage' %}
+    
+                            {% assign product_collection = coll %}
+      {{productcollection}}
+                        {% endunless %}
+                    {% endfor %}
+                {% endif %}
+                {% assign product_image_size_norm = true %}
+                {% assign prod_rel_count = 0 %}
+      {% assign prod_rel_limit_int = 10 %}
+      {% assign prod_rel_limit_plus_one = 11 %}
+   
+                
+                {% paginate product_collection.products by 1000 %}
+                {% for relprod in product_collection.products %}
+      
+  {% if relprod.title == product.title and relprod.type == product.type %}
+                    {% assign prod_rel_count = prod_rel_count | plus: 1 %}
+                    {% assign show_related = true %}
+                    {% render 'product-colorway1' with relprod: relprod %}
+                  {% endif %}
+                {% endfor %}
+       {% assign sp_paginate_by = paginate.page_size %}{% endpaginate %}
+                
+    </ul>
+  
+  </div>
+                      
+                      {% if block.settings.show_separator %}
+                      <hr/>
+                      {% endif %}
+                      
+                    </div>
+              
+              
+                  {%- when 'description' -%}
+                    <div class="product-block{% if block.settings.is_tab %} product-block--tab{% endif %}" {{ block.shopify_attributes }}>
+                      {%- render 'product-description', id: block.id, product: product, is_tab: block.settings.is_tab -%}
+                      {% if block.settings.show_separator %}
+                      <hr/>
+                      {% endif %}
+                    </div>
+                  {%- when 'price' -%}
+                    <div class="product-block product-block--price" {{ block.shopify_attributes }}>
+                      {%- assign hide_sale_price = true -%}
+                      {%- if product.compare_at_price_max > product.price -%}
+                        {%- if current_variant.compare_at_price > current_variant.price -%}
+                          {%- assign hide_sale_price = false -%}
+                        {%- endif -%}
+                        <span
+                          data-a11y-price
+                          class="visually-hidden"
+                          aria-hidden="{{ hide_sale_price }}">
+                            {{ 'products.general.regular_price' | t }}
+                        </span>
+                        <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
+                          <span data-compare-price class="product__price product__price--compare">
+                            {%- if current_variant.compare_at_price > current_variant.price -%}
+                              {{ current_variant.compare_at_price | money }}
+                            {%- endif -%}
+                          </span>
+                        </span>
+                        <span data-compare-price-a11y class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+                      {%- else -%}
+                        <span data-a11y-price class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+                      {%- endif -%}
+
+                      <span data-product-price
+                        class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
+                        {%- unless product.empty? -%}
+                          {{ current_variant.price | money }}
+                        {%- else -%}
+                          {{ 1999 | money }}
+                        {%- endunless -%}
+                      </span>
+
+                      {%- if settings.product_save_amount -%}
+                        {%- if settings.product_save_type == 'dollar' -%}
+                          {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}
+                        {%- else -%}
+                          {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round }}%{%- endcapture -%}
+                        {%- endif -%}
+                        <span data-save-price class="product__price-savings{% if hide_sale_price %} hide{% endif %}">
+                          {%- unless hide_sale_price -%}
+                            {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+                          {%- endunless -%}
+                        </span>
+                      {%- endif -%}
+
+                      <div
+                        data-unit-price-wrapper
+                        class="product__unit-price product__unit-price--spacing {% unless current_variant.unit_price_measurement %} hide{% endunless %}">
+                        {%- capture unit_price_base_unit -%}
+                          <span data-unit-base>
+                            {%- if current_variant.unit_price_measurement -%}
+                              {%- if current_variant.unit_price_measurement.reference_value != 1 -%}
+                                {{ current_variant.unit_price_measurement.reference_value }}
+                              {%- endif -%}
+                              {{ current_variant.unit_price_measurement.reference_unit }}
+                            {%- endif -%}
+                          </span>
+                        {%- endcapture -%}
+
+                        <span data-unit-price>{{ current_variant.unit_price | money }}</span>/{{ unit_price_base_unit }}
+                      </div>
+
+                      {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+                        <div class="product__policies rte small--text-center">
+                          {%- if shop.taxes_included -%}
+                            {{ 'products.product.include_taxes' | t }}
+                          {%- endif -%}
+                          {%- if shop.shipping_policy.body != blank -%}
+                            {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                          {%- endif -%}
+                        </div>
+                      {%- endif -%}
+                    </div>
+                  {%- when 'quantity_selector' -%}
+                    <div class="product-block" {{ block.shopify_attributes }}>
+                      <div class="product__quantity">
+                        {% assign qty_id = section_id | append: product.id %}
+                        <label for="Quantity-{{ qty_id }}">{{ 'products.product.quantity' | t }}</label>
+                        {%- render 'quantity-input', form_id: form_id, id: qty_id, qty: 1, min: 1 -%}
+                      </div>
+                    </div>
+                  {%- when 'variant_picker' -%}
+  <div class="modalPrescription">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="firstScreen" id="firstScreen">
+      
+      <div class="product-block" {{ block.shopify_attributes }}>
+                      {%- unless product.has_only_default_variant -%}
+                        {%- for option in product.options_with_values -%}
+                          {%- liquid
+                            if block.settings.color_swatches
+                              assign is_color = false
+                              assign color_option_index = 0
+                              assign swatch_trigger = 'products.general.color_swatch_trigger' | t | downcase
+                              assign color_option_index = forloop.index0
+                              assign downcased_option = option.name | downcase
+                              if downcased_option contains swatch_trigger
+                                assign is_color = true
+                              elsif swatch_trigger == 'color' and downcased_option contains 'colour'
+                                assign is_color = true
+                              endif
+                            endif
+                          -%}
+
+                          {%- if block.settings.picker_type == 'button' -%}
+                            {%- render 'variant-button-eyeglasses',
+                              product: product,
+                              form_id: form_id,
+                              section_id: section_id,
+                              option: option,
+                              forloop: forloop,
+                              variant_labels: block.settings.variant_labels,
+                              is_color: is_color,
+                              color_option_index: color_option_index
+                            -%}
+                          {%- else -%}
+                            {%- render 'variant-dropdown',
+                              product: product,
+                              form_id: form_id,
+                              section_id: section_id,
+                              option: option,
+                              forloop: forloop,
+                              variant_labels: block.settings.variant_labels
+                            -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+                      {%- endunless -%}
+
+       {% comment %} <div id="showFourthScreen" class="btn">Add to Cart</div> {% endcomment %}
+
+         <div class="product-block product-block--tab">
+                      
+                      
+<div class="collapsibles-wrapper collapsibles-wrapper--border-bottom">
+    <button type="button" class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height" aria-controls="prescription-content" aria-expanded="true">
+     
+ Prescription <svg class="customCheckmark" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="8" cy="8" r="7.5" stroke="#E0E0E0"/>
+<path d="M5.64566 5.90922L4 7.75791L7.68657 12L17 1.89821L15.2753 0L7.68657 8.2696L5.64566 5.90922Z" fill="#E0E0E0"/>
+</svg>
+
+<span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"></path></svg>
+</span>
+</button>
+    <div id="prescription-content" class="collapsible-content collapsible-content--all" style="height: 0px;">
+      <div class="collapsible-content__inner rte">
+          <div id="secondScreen" class="firstScreen">
+    <h2>Let's get your prescription</h2>
+    <div id="uploadPhoto" class="modalButtons">
+      <div class="firstColumn">
+        <div class="icon">
+        	<svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.04707 14.5788L11.776 14.5497L11.7467 8.25989L15.75 8.2307L11.7906 4.11535L7.84577 0L3.91558 4.14454L0 8.30367L4.00324 8.28907L4.04707 14.5788Z" fill="#D2D2D2"/>
+<path d="M15.6477 17.1472H0.116886V20.9999H15.6477V17.1472Z" fill="#D2D2D2"/>
+</svg>
+
+        </div>
+      </div>
+      <div class="secondColumn">
+      <div class="firstHead">Upload a photo of it</div>
+      
+      </div>
+    </div>
+      <div class="secondHead">Upload an image of your prescription for the fastest turn around time</div>
+  <div class="or">OR</div>
+    
+    <div id="sendLater" class="modalButtons">
+      <div class="firstColumn">
+        <div class="icon">
+        	<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 8.57252C1.82604 9.60392 3.21071 10.3353 4.54075 11.1558C5.0552 11.4728 5.48034 11.61 5.90917 11.509L7.87619 9.98213C8.756 9.23604 9.69338 8.54819 10.5894 7.81832C10.54 7.87804 10.4876 7.93554 10.4366 7.99452L14.4371 4.88999L6.74765 12.9547C6.40665 14.0672 6.41256 15.364 7.04436 16.9999C9.39076 12.1223 11.9032 15.4886 14.4349 16.5731C14.488 16.5959 14.5574 16.5812 14.9279 16.5974C16.2469 11.3239 17.5629 6.06442 19 0.320557C12.4885 3.14862 6.44429 5.77394 0 8.57252Z" fill="#D2D2D2"/>
+</svg>
+
+        </div>
+      </div>
+      <div class="secondColumn">
+      <div class="firstHead">Send it to us later</div>
+     
+      </div>
+    </div>
+       <div class="secondHead">Send us an image of your prescription after you checkout</div>
+    </div>
+ 
+  </div>
+                  </div>
+
+              </div>              
+      </div>
+        <div class="product-block">
+                          {%- render 'product-form-eyeglasses',
+                            form_id: form_id,
+                            product: product,
+                            show_dynamic_checkout: block.settings.show_dynamic_checkout,
+                            current_variant: current_variant
+                          -%}
+                        </div>
+        
+                    </div>
+  
+
+</div>
+                  </div>
+              </div>
+
+<script>
+  $(document).ready(function() {
+
+ $('.option2Unselected label.variant__button-label').click(function(){
+   $('.option2Unselected .customCheckmark').addClass('active');
+      $('.variant-input-wrap').removeClass('option2Unselected');
+       $('.modal-content .collapsible-trigger[aria-controls="lens-type"]:not(.is-open)').click();
+    //  $('.customCheckmark').addClass('active');
+     // $('.add-to-cart').removeClass('btn-disabled');
+    });
+
+    $('.option3Unselected label.variant__button-label').click(function(){
+   $('.modal-content .collapsible-trigger[aria-controls="lens-type"] .customCheckmark').addClass('active');
+      $('.variant-input-wrap').removeClass('option3Unselected');
+       $('.modal-content .collapsible-trigger[aria-controls="lens-material"]:not(.is-open)').click();
+    //  $('.customCheckmark').addClass('active');
+     // $('.add-to-cart').removeClass('btn-disabled');
+    });
+     $('.option4Unselected label.variant__button-label').click(function(){
+   $('.modal-content .collapsible-trigger[aria-controls="lens-material"] .customCheckmark').addClass('active');
+      $('.variant-input-wrap').removeClass('option4Unselected');
+       $('.modal-content .collapsible-trigger[aria-controls="prescription-content"]:not(.is-open)').click();
+    //  $('.customCheckmark').addClass('active');
+     // $('.add-to-cart').removeClass('btn-disabled');
+    });
+
+
+   /* 
+   var i = 0;
+  var width = 25;
+function move(width1) {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var id = setInterval(frame, 10);
+    function frame() {
+     // console.log("Width is" + width);
+     // console.log("Width1 is" + width1);
+      if (width == width1) {
+       // console.log("I am in clear interval");
+        clearInterval(id);
+        i = 0;
+      }
+      
+      else if (width > width1) {
+        
+        width--;
+        elem.style.width = width + "%";
+      //  console.log("moving back to "+ width1);
+      }
+      else {
+        width++;
+        elem.style.width = width + "%";
+       // elem.innerHTML = width  + "%";
+       // console.log("moving forward to "+ width1);
+      }
+      
+    }
+  }
+
+}
+  
+// Get the modal
+var modal1 = document.getElementById("myModal1");
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("addToCart1");
+
+// Get the <span> element that closes the modal
+var span1 = document.getElementsByClassName("close1")[0];
+
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+  $("#showThirdScreen").hide();
+  $(".add-to-cart").hide();
+  $(".firstScreen h2").html("Select Prescription Type");
+  $("#backButton").hide();
+  $("#backButton1").hide();
+  $("#backButton2").hide();
+  $("fieldset[data-index='option2']").hide();
+  $("fieldset[data-index='option1']").show();
+  $("fieldset[data-index='option3']").hide();
+  $(".variant-input[data-value='Single Vision'] input[type='radio']").prop("checked", true).change();
+   //$(".variant-input[data-value='Polycarbonate'] input[type='radio']").prop("checked", true).change();
+  // $("#ProductSelect-option-1 input[id='ProductSelect-template--15123727024298__main-6874106101930-option-lens-type-Polycarbonate']").prop("checked", true).change();
+  
+  $("#showSecondScreen").show();
+  modal1.style.display = "block";
+  
+  
+}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+  modal1.style.display = "none";
+ // location.reload();
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+
+  
+    
+    
+     $("#showSecondScreen").click(function() {
+       
+       var checkedValue=$('input[name="Lens"]:checked').val();
+       console.log(checkedValue);
+       
+       if(checkedValue == 'Single Vision Polarized' || checkedValue == 'Progressive Polarized'){
+      $(".variant-input[data-value='Polycarbonate'] input[type='radio']").prop("checked", true).change();
+         setTimeout(function(){ $('.add-to-cart').click(); }, 1000);
+           
+         
+         
+    modal1.style.display = "none";
+       }
+       else {
+         $(".firstScreen h2").html("Select Lenses");
+      
+       move(75);
+         
+         var checkedValue=$('input[name="Prescription Type"]:checked').val();
+       console.log(checkedValue);
+         
+         if (checkedValue.indexOf("Non Prescription") >= 0) {
+          $("div[data-value='Light Responsive - +$100']").hide();
+           $("div[data-value='1.67 High Index - +$30']").hide(); 
+         }
+         else {
+          $("div[data-value='Light Responsive - +$100']").show();
+           $("div[data-value='1.67 High Index - +$30']").show(); 
+         }
+       
+       $("fieldset[data-index='option2']").show();
+       $("fieldset[data-index='option1']").hide();
+       $("#showThirdScreen").show();
+       $("#showSecondScreen").hide();
+       $("#backButton").show();
+         $("#back1Button").hide();
+         $(".magnificationVariant[data-value='+1.0'] input[type='radio']").prop("checked", true).change();
+    //  $("fieldset[data-index='option2'] .magnificationVariant input").prop("checked", true).change();
+       }
+       
+
+  });
+    
+    $("#showThirdScreen").click(function() {
+       
+       var checkedValue=$('input[name="Prescription Type"]:checked').val();
+       console.log("Checked Value is"+ checkedValue);
+       
+       if(checkedValue == 'Single Vision' || checkedValue.includes('Progressive')){
+         console.log("Condition is true");
+      $(".variant-input[data-value='Polycarbonate'] input[type='radio']").prop("checked", true).change();
+                  $("div[data-value='Polycarbonate'] label").click();
+         console.log("Label clicked");
+   
+         
+           
+         
+         
+    //modal1.style.display = "none";
+       }
+      
+         $(".firstScreen h2").html("Select Lens Material");
+      
+       move(75);
+         
+       
+       $("fieldset[data-index='option3']").show();
+       $("fieldset[data-index='option1']").hide();
+         $("fieldset[data-index='option2']").hide();
+      // $(".add-to-cart").show();
+       $("#showSecondScreen").hide();
+         $("#showThirdScreen").hide();
+         $("#showFourthScreen").show();
+       $("#backButton").hide();
+         $("#backButton1").show();
+         $("#backButton2").hide();
+         $(".magnificationVariant[data-value='+1.0'] input[type='radio']").prop("checked", true).change();
+    //  $("fieldset[data-index='option2'] .magnificationVariant input").prop("checked", true).change();
+       
+       
+
+  });
+    
+     $("#showFourthScreen").click(function() {
+    $("#firstScreen").addClass('hidden');
+     $("#secondScreen").removeClass('hidden');
+       $("#backButton1").hide();
+        $("#backButton2").show();
+  
+  });
+    
+    $(".add-to-cart").click(function() {
+  move(50);
+   // $('.add-to-cart').click();
+    modal1.style.display = "none";
+  });
+    
+    
+    $("#backButton").click(function() {
+  move(25);
+    $("fieldset[data-index='option1']").show();
+       $("fieldset[data-index='option2']").hide();
+      $("fieldset[data-index='option3']").hide();
+      $("#showThirdScreen").hide();
+      $("#showSecondScreen").hide();
+      $("#backButton").hide();
+      $("#showSecondScreen").show();
+      $(".firstScreen h2").html("Select Prescription Type");
+      $(".add-to-cart").hide();
+      $("#showFourthScreen").hide();
+  });
+    
+     $("#backButton1").click(function() {
+  move(25);
+      $("fieldset[data-index='option2']").show();
+      $("fieldset[data-index='option1']").hide();
+       $("fieldset[data-index='option3']").hide();
+      $("#showThirdScreen").show();
+       $("#showFirstScreen").hide();
+      $("#backButton1").hide();
+       $("#backButton").show();
+      $("#showSecondScreen").hide();
+      $(".firstScreen h2").html("Select Lenses");
+       $(".add-to-cart").hide();
+       $("#showFourthScreen").hide();
+       
+  });
+    $("#backButton2").click(function() {
+      $("#firstScreen").removeClass('hidden');
+     $("#secondScreen").addClass('hidden');
+       $("#backButton1").show();
+       $("#backButton").hide();
+      $("#backButton2").hide();
+    });
+    
+    $(".variant-input[data-value='Reader Polarized'] label").click(function() {
+      console.log("Label Clicked");
+       $(".magnificationVariant[data-value='+1.0'] input[type='radio']").prop("checked", true).change();
+    });
+    $(".variant-input[data-value='Single Vision'] label").click(function() {
+      console.log("Label Clicked");
+       $(".variant-input[data-value='Polycarbonate'] input[type='radio']").prop("checked", true).change();
+    });
+    $(".variant-input[data-value='Progressive - +$145'] label").click(function() {
+      console.log("Label Clicked");
+       $(".variant-input[data-value='Polycarbonate'] input[type='radio']").prop("checked", true).change();
+    });
+  
+*/
+  
+     const uploadButton = document.querySelector('#uploadPhoto');
+//const fileInfo = document.querySelector('.file-info');
+const realInput = document.getElementById('prescription-rx');
+   
+   uploadButton.addEventListener('click', () => {
+  realInput.click();
+});
+   
+   realInput.addEventListener('change', () => {
+  const name = realInput.value.split(/\\|\//).pop();
+  const truncated = name.length > 20 
+    ? name.substr(name.length - 20) 
+    : name;
+     
+  $('#send_prescription_later').val('');
+  $('.progressGif').show();
+
+
+     $('#secondScreen .secondHead').first().html(truncated);
+     $('.add-to-cart').removeClass('btn-disabled');
+      setTimeout(function(){
+                   $('.progressGif').hide();
+                  //$('button[data-add-to-cart]').click();
+                  $('.product-single__form').submit();
+                  }, 1500);   
+   
+  //fileInfo.innerHTML = truncated;
+});
+  
+  const sendLater = document.querySelector('#sendLater');
+//const fileInfo = document.querySelector('.file-info');
+const send_prescription_later = document.getElementById('send_prescription_later');
+   
+   sendLater.addEventListener('click', () => {
+  $('#send_prescription_later').val('Yes');
+     $('#sendLater').addClass('active');
+     $('.modal-content .collapsible-trigger[aria-controls="prescription-content"] .customCheckmark').addClass('active');
+     $('.add-to-cart').removeClass('btn-disabled');
+ 
+
+}); 
+  });
+
+  
+</script>
+              
+                    
+                  {%- when 'buy_buttons' -%}
+                  
+                   {%  comment %} <div style="display: none;" class="product-block" {{ block.shopify_attributes }}>
+                      {%- unless product.empty? -%}
+                        <div class="product-block">
+                          {%- render 'product-form-eyeglasses',
+                            form_id: form_id,
+                            product: product,
+                            show_dynamic_checkout: block.settings.show_dynamic_checkout,
+                            current_variant: current_variant
+                          -%}
+                        </div>
+                      {%- endunless -%}
+                  {%  endcomment %}
+
+                      {%- if block.settings.surface_pickup_enable -%}
+                        <div data-store-availability-holder
+                          data-product-name="{{ product.title | escape }}"
+                          data-base-url="{{ shop.url }}{{ routes.root_url }}"
+                          ></div>
+                      {%- endif -%}
+                    </div>
+              
+              <div class="filterVariantsSection">
+            <div class="or">OR</div>
+                <a class="customCartBtn customCartBtnSecondary">Select Reader Lenses</a>
+                
+              </div>
+              
+              <script>
+                $(document).ready(function() {
+                  $('.customCartBtnSecondary').click(function() {
+                    var url = window.location.href;
+                    const myArr = url.split("?");
+                    url=myArr[0];
+                    url=url+"-readers";
+                    window.location.replace(url);
+                  });
+                });
+              </script>
+              
+              
+              
+                  {%- when 'sales_point' -%}
+                    <div class="product-block product-block--sales-point" {{ block.shopify_attributes }}>
+                      <ul class="sales-points">
+                        <li class="sales-point">
+                          <span class="icon-and-text">
+                            {% case block.settings.icon %}
+                              {% when 'checkmark' %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-circle-checkmark" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-width:2px}</style></defs><path class="cls-1" d="M52.68 24.48A22 22 0 1 1 47 15.93M21 32l8.5 8.5L57 13"/></svg>
+                              {% when 'globe' %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-globe" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-width:2px}</style></defs><circle class="cls-1" cx="33" cy="32" r="22"/><path class="cls-1" d="M14 21h38M11 32h44M14 43h38M33 10c-12 8-12 37 0 44M33 10c12 8 12 37 0 44"/></svg>
+                              {% when 'leaf' %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-leaf" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M51 12L13 50M35 13v15h16"/><path class="cls-1" d="M52 11c6 24-16.72 47.29-33 32C7 22 29 10 52 11z"/></svg>
+                              {% when 'package' %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-package" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-width:2px}</style></defs><path class="cls-1" d="M32 56L9.05 42.88V22.12L32 9l22.95 13.12v20.76L32 56z"/><path class="cls-1" d="M32 56V35.23l22.95-13.11M32 35.23L9.05 22.12M42.13 14.79L20.52 28.67v8.75"/></svg>
+                              {% when 'lock' %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-lock" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-width:2px}</style></defs><path id="svg_2" data-name="svg 2" class="cls-1" d="M20.48 24v-3c0-6.6 5.52-11 11.76-11C39 10 44 15.13 44 21v3"/><path id="svg_4" data-name="svg 4" class="cls-1" d="M11.62 24h41.25v29.77H11.62z"/><path class="cls-1" d="M32.24 37v7"/><circle class="cls-1" cx="32.24" cy="35.5" r="1.5"/></svg>
+                              {% when 'truck' %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-truck" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M17 47.72H7.38V21h33.14v26.72H24.44M45.92 47.72h-5.4V34.9h17.1v12.82h-4.23M57.62 34.9l-6.41-8.56H40.52"/><circle class="cls-1" cx="20.74" cy="48.26" r="3.74"/><path class="cls-1" d="M45.92 47.73a3.82 3.82 0 1 1 0 .37v-.37"/></svg>
+                            {% endcase %}
+                            <span>{{ block.settings.text }}</span>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  {%- when 'inventory_status' -%}
+                    <div class="product-block product-block--sales-point" {{ block.shopify_attributes }}>
+                      {%- render 'product-inventory', product: product, current_variant: current_variant, block: block -%}
+                    </div>
+                  {%- when 'share' -%}
+                    <div class="product-block" {{ block.shopify_attributes }}>
+                      {%- render 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product -%}
+                    </div>
+                  {%- when 'trust_badge' -%}
+                    <div class="product-block" {{ block.shopify_attributes }}>
+                      <div class="aos-animate" style="max-width: {{ block.settings.trust_image.width }}px; margin: 0 auto;">
+                        <div class="image-wrap " style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.trust_image.aspect_ratio }}%;">
+                          {%- assign img_url = block.settings.trust_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                          <img class="lazyload"
+                              data-src="{{ img_url }}"
+                              data-widths="[360, 540, 700, 1024]"
+                              data-aspectratio="{{ block.settings.trust_image.aspect_ratio }}"
+                              data-sizes="auto"
+                              alt="{{ block.settings.trust_image.alt }}">
+                          <noscript>
+                            <img class="lazyloaded" src="{{ block.settings.trust_image | img_url: '540x' }}" alt="{{ block.settings.trust_image.alt }}">
+                          </noscript>
+                        </div>
+                      </div>
+                    </div>
+                {%- endcase -%}
+              {%- else -%}
+                <div data-blocks-holder
+                     data-url="{{ product.url | within: collection }}"
+                     data-template="{{ product.template_suffix }}">
+                  <div class="placeholder-content" style="min-height: 86px;"></div>
+                </div>
+              {%- endfor -%}
+            </div>
+                                 {%- unless product.empty? -%}
+              <textarea class="hide" aria-hidden="true" aria-label="Product JSON" data-variant-json>
+                {{ product.variants | json }}
+              </textarea>
+              {%- if product.options.size > 1 -%}
+                <textarea class="hide" aria-hidden="true" aria-label="Variant JSON" data-current-variant-json>
+                  {{ current_variant | json }}
+                </textarea>
+              {%- endif -%}
+            {%- endunless -%}
+          </div>
+        </div>
+
+        {%- unless image_position == 'left' -%}
+          <div class="grid__item {{ product_image_width }} product-single__sticky">
+            {%- render 'product-images',
+              section_id: section_id,
+              product: product,
+              isModal: isModal,
+              image_position: image_position,
+              product_zoom_size: product_zoom_size,
+              product_image_size: product_image_size,
+              thumbnail_arrows: thumbnail_arrows,
+              thumbnail_position: thumbnail_position,
+              video_looping: video_looping,
+              video_style: video_style
+            -%}
+          </div>
+        {%- endunless -%}
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+    .hidden {
+     display: none !important; 
+    }
+    .modalButtons .thirdColumn {
+     text-align: right; 
+    }
+    .modalButtons .firstColumn {
+     width: 40px; 
+    }
+  #showFourthScreen {
+    display: none;
+  }
+  .modal-content {
+    border: 0px !important;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+  .firstScreen .collapsible-content__inner{
+    padding-left: 0px !Important;
+    padding-right: 0px !Important;
+    padding-top: 15px !Important;
+    padding-bottom: 15px !Important;
+  }
+  .firstScreen .collapsible-trigger {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+  .firstScreen .color-label {
+    margin-bottom: 15px !important;
+  }
+  .modalPrescription {
+    padding-bottom: 0px !Important;
+  }
+  .filterVariantsSection .or {
+    margin-bottom: 10px !important;
+  }
+  </style>

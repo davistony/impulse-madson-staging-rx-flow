@@ -1,0 +1,150 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "enable": false,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "3f8a8987-e677-4f86-a7e0-3ca847a4be7d": {
+      "type": "promo-collections",
+      "blocks": {
+        "template--14724168351831__3f8a8987-e677-4f86-a7e0-3ca847a4be7d-166928804647b44977-0": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Eyeglasses",
+            "cta_link1": "shopify://collections/eyeglasses"
+          }
+        },
+        "template--14724168351831__3f8a8987-e677-4f86-a7e0-3ca847a4be7d-166928804647b44977-1": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Collection 2",
+            "cta_link1": ""
+          }
+        },
+        "cc263c39-5d22-4013-808e-66b0711cce79": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Collection 3",
+            "cta_link1": ""
+          }
+        },
+        "f4c76a49-6e3b-4c38-8c34-a5722809a2a0": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Shop This",
+            "cta_link1": ""
+          }
+        },
+        "dbf6085b-880f-4de3-9782-82b320e3b40f": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Shop This",
+            "cta_link1": ""
+          }
+        },
+        "84dee674-c9ef-40d6-9aac-17a5fd4524ff": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Shop This",
+            "cta_link1": ""
+          }
+        },
+        "0c55fd0d-8070-4659-8d64-91a4ae0c5c21": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Shop This",
+            "cta_link1": ""
+          }
+        },
+        "d4b0f703-96b9-447f-bd0a-787594c4becd": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Shop This",
+            "cta_link1": ""
+          }
+        },
+        "0b681492-6a00-4a55-9d4e-a44f5efa91ac": {
+          "type": "advanced",
+          "settings": {
+            "cta_text1": "Shop This",
+            "cta_link1": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14724168351831__3f8a8987-e677-4f86-a7e0-3ca847a4be7d-166928804647b44977-0",
+        "template--14724168351831__3f8a8987-e677-4f86-a7e0-3ca847a4be7d-166928804647b44977-1",
+        "cc263c39-5d22-4013-808e-66b0711cce79",
+        "f4c76a49-6e3b-4c38-8c34-a5722809a2a0",
+        "dbf6085b-880f-4de3-9782-82b320e3b40f",
+        "84dee674-c9ef-40d6-9aac-17a5fd4524ff",
+        "0c55fd0d-8070-4659-8d64-91a4ae0c5c21",
+        "d4b0f703-96b9-447f-bd0a-787594c4becd",
+        "0b681492-6a00-4a55-9d4e-a44f5efa91ac"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 38,
+        "space_above": true,
+        "space_below": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 2,
+            "rows_per_page": 20,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "3f8a8987-e677-4f86-a7e0-3ca847a4be7d",
+    "main-collection"
+  ]
+}

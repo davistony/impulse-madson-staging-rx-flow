@@ -1,0 +1,403 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "enable": false,
+        "collection_image_enable": false,
+        "parallax": false
+      }
+    },
+    "16493019442e2616c7": {
+      "type": "slideshow",
+      "blocks": {
+        "d0e0a9f8-883c-4e2f-9422-b751ce50ced7": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "LOYALTY DISCOUNT",
+            "title": "Oversized",
+            "title_size": 80,
+            "subheading": "SAVE 15%",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/sunglass_collection_desktop_TEMPLATE.jpg",
+            "image_mobile": "shopify://shop_images/kasey_mobile_test.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "d0e0a9f8-883c-4e2f-9422-b751ce50ced7"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "250px",
+        "parallax": false,
+        "style": "dots",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "1653942472b53c0af0": {
+      "type": "advanced-content",
+      "blocks": {
+        "16539424717ec67075-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "16539424717ec67075-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true
+      }
+    },
+    "1649298592c2892117": {
+      "type": "rich-text",
+      "blocks": {
+        "16492985925d416522-0": {
+          "type": "heading",
+          "settings": {
+            "title": "LOYALTY OFFER"
+          }
+        },
+        "16492985925d416522-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Repeat customers get special access to 15% Off the Oversized Collection + Free Memorial Hat. Today Only.  </p>"
+          }
+        }
+      },
+      "block_order": [
+        "16492985925d416522-0",
+        "16492985925d416522-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "1653946752be3dfc04": {
+      "type": "promo-grid",
+      "blocks": {
+        "061a2d5e-3ad5-4eb0-a895-962c5263ab02": {
+          "type": "banner",
+          "settings": {
+            "heading": "SAVE 15% Access",
+            "text": "Special Discount applies only to repeat customers and on the Oversized Collection color ways accessed through this webpage only.",
+            "link": "",
+            "label": "",
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "061a2d5e-3ad5-4eb0-a895-962c5263ab02"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "16539450478ba25bae": {
+      "type": "text-columns",
+      "blocks": {
+        "16539450472bf1213a-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/piston-xl-comparrison-web-square.jpg",
+            "image_width": 650,
+            "title": "Piston XL",
+            "text": "<p>The Piston XL is our largest frame. It has clean lines combined with a timeless heritage shape.</p>",
+            "button_label": "SHOP NOW - SAVE 15%",
+            "button_link": "https://madsonofamerica.com/products/the-piston-xl-black-matte-grey-polarized-sale"
+          }
+        },
+        "16539450472bf1213a-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/madson_camino_hold_600.jpg",
+            "image_width": 650,
+            "title": "CAMINO",
+            "text": "<p>The Camino has a bold flattering shape for anyone looking for something strong and sturdy. </p>",
+            "button_label": "SHOP CAMINO - Save 15%",
+            "button_link": "https://madsonofamerica.com/products/the-camino-black-matte-grey-polarized-sale"
+          }
+        }
+      },
+      "block_order": [
+        "16539450472bf1213a-0",
+        "16539450472bf1213a-1"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "165394574897b2d84a": {
+      "type": "testimonials",
+      "blocks": {
+        "16539457470dc4de19-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>“I have a big head so finding sunglasses that fit properly is kinda tough. These glasses fit perfectly, they don’t feel loose at all, and they don’t have to stretch to fit. They actually feel like a custom fit. I will be ordering another pair for my prescription. If you have a big head you will not be disappointed.”</p>",
+            "author": "John S.",
+            "author_info": "USA"
+          }
+        },
+        "16539457470dc4de19-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>“I've been looking for good looking glasses to fit my immense noggin for a long time...I've finally found them. They fit great, look good and are made very well.” </p>",
+            "author": "Charles A.",
+            "author_info": "USA"
+          }
+        },
+        "16539457470dc4de19-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>“Perfect sunglasses for people with a larger head. Lightweight and comfortable.”</p>",
+            "author": "Eduardo P.",
+            "author_info": "USA"
+          }
+        },
+        "16539457470dc4de19-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>“Love these glasses. Great shape with a vintage feel. Rugged and durable. Keep on making more XL styles!”</p>",
+            "author": "Brandon S.",
+            "author_info": "USA"
+          }
+        },
+        "16539457470dc4de19-4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>“It takes me forever to find the right size glasses for my big ol’ head. These fit me perfect”</p>",
+            "author": "Jack P. ",
+            "author_info": "USA"
+          }
+        }
+      },
+      "block_order": [
+        "16539457470dc4de19-0",
+        "16539457470dc4de19-1",
+        "16539457470dc4de19-2",
+        "16539457470dc4de19-3",
+        "16539457470dc4de19-4"
+      ],
+      "settings": {
+        "title": "Reviews",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "165394609000df7180": {
+      "type": "text-columns",
+      "blocks": {
+        "165394609093911599-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/pivot-xl-comparrison-text-web.jpg",
+            "image_width": 650,
+            "title": "PIVOT XL",
+            "text": "<p>The Pivot XL is our new staff favorite in the Oversized Collection. Featuring light weight construction for optimal comfort.</p>",
+            "button_label": "SHOP PIVOT XL - SAVE 15%",
+            "button_link": "https://madsonofamerica.com/products/the-pivot-xl-black-matte-grey-polarized-sale"
+          }
+        },
+        "165394609093911599-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/vincent-xl-continental-square.jpg",
+            "image_width": 650,
+            "title": "VINCENT XL",
+            "text": "<p>The Vincent XL is a new style with a retro shape. It's one of our largest frames.</p>",
+            "button_label": "SHOP VINCENT XL - SAVE 15%",
+            "button_link": "https://madsonofamerica.com/products/the-vincent-xl-tortoise-grey-polarized-sale"
+          }
+        },
+        "165394609093911599-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/madson-classico-polarized-blackmatte-grey-angle_1800x1800_fd2a7381-ec19-4610-8a75-c34e4c49f5c3.jpg",
+            "image_width": 650,
+            "title": "Classico",
+            "text": "<p>Inspired by the classic styles of the 1950s the Classico is a beefed-up oversized version of a timeless shape.</p>",
+            "button_label": "SHOP CLASICCO - SAVE 15%",
+            "button_link": "https://madsonofamerica.com/products/the-classico-black-matte-grey-polarized-sale"
+          }
+        }
+      },
+      "block_order": [
+        "165394609093911599-0",
+        "165394609093911599-2",
+        "165394609093911599-1"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "165394698173dbb26e": {
+      "type": "promo-grid",
+      "blocks": {
+        "58430e8b-00a1-4042-8320-8c091f46cbc4": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "SAVE 15%",
+            "text": "Special Discount applies only to repeat customers and oversized limited colorways accessed through this webpage.",
+            "link": "",
+            "label": "",
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        },
+        "0ba3d0ac-0245-4039-9d43-a07cfb6b3f64": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "LAST DAY",
+            "heading": "Loyalty 15% Discount + Free Hat",
+            "textarea": "Limited Time Only. Save 15% Off + Get a Free Limited Edition Hat. Access to discount only on this webpage. Hat will be automatically added to your cart at checkout.",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify://shop_images/memorial-day-free-hat-desktop.jpg",
+            "video_url": "",
+            "width": "100",
+            "height": 500,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "58430e8b-00a1-4042-8320-8c091f46cbc4",
+        "0ba3d0ac-0245-4039-9d43-a07cfb6b3f64"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection-sunglasses",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": false
+          }
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 2,
+            "rows_per_page": 50,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "collectionTitle": "",
+        "collectionHeading": "Designed and built with the best materials available - backed with a Lifetime Warranty.",
+        "collectionSubheading": "FREE RETURNS ON ALL ORDERS",
+        "enable_sidebar": false,
+        "collapsed": false,
+        "filter_style": "drawer",
+        "enable_color_swatches": false,
+        "enable_sort": false
+      }
+    },
+    "1637686232514ddc8b": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Related",
+        "home_featured_products": "related",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "16493019442e2616c7",
+    "1653942472b53c0af0",
+    "1649298592c2892117",
+    "1653946752be3dfc04",
+    "16539450478ba25bae",
+    "165394574897b2d84a",
+    "165394609000df7180",
+    "165394698173dbb26e",
+    "main-collection",
+    "1637686232514ddc8b"
+  ]
+}

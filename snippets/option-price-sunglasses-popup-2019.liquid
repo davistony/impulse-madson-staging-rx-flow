@@ -1,0 +1,57 @@
+{% if optionValue == 'Classic' %}
+Free
+{% elsif optionValue == 'Standard'  %}
+Free
+{% elsif optionValue == 'Blue Light'  %}
++$50
+{% elsif optionValue == 'Light Responsive'  %}
++$100
+{% elsif optionValue == 'Polycarbonate'  %}
+Free
+{% elsif optionValue == '1.67 High Index'  %}
++$30
+
+{% elsif optionValue == 'Progressive Polarized'  %}
+{% if product.metafields.Progressive.compare-progressive %} <span>{{product.metafields.Progressive.compare-progressive}}</span> {% endif %}{{product.metafields.Progressive.progressive}}
+
+{% elsif optionValue == 'Progressive Polar Lenses'  %}
+{% if product.metafields.Progressive.compare-progressive %} <span>{{product.metafields.Progressive.compare-progressive}}</span> {% endif %}{{product.metafields.Progressive.progressive}}
+
+
+{% elsif optionValue == 'Single Vision Polarized'  %}
+{% if product.metafields.SingleVision.compare-singlevision %} <span>{{product.metafields.SingleVision.compare-singlevision }}</span> {% endif %}{{product.metafields.SingleVision.singlevision}}
+
+{% elsif optionValue == 'Single Vision Polar Lenses'  %}
+{% if product.metafields.SingleVision.compare-singlevision %} <span>{{product.metafields.SingleVision.compare-singlevision }}</span> {% endif %}{{product.metafields.SingleVision.singlevision}}
+
+
+
+{% elsif optionValue == 'Enhanced Lenses'  %}
+$95
+
+{% elsif optionValue == 'Premium Polarized'  %}
+$65
+
+{% elsif optionValue == 'Polarized Lenses'  %}
+$50
+{% if product.metafields.price.compare-polarized-lenses %} <span>{{product.metafields.price.compare-polarized-lenses}}</span> {% endif %}{{product.metafields.price.polarized-lenses}}
+
+{% elsif optionValue == 'Prescription Polarized Lenses'  %}
+{% if product.metafields.price.compare-prescription-polarized %} <span>{{product.metafields.price.compare-prescription-polarized}}</span> {% endif %}{{product.metafields.price.prescription-polarized-lenses}}
+
+
+{% elsif optionValue == 'Enhanced Polarized Lenses'  %}
+{% if product.metafields.price.compare-enhanced-polarized %} <span>{{product.metafields.price.compare-enhanced-polarized}}</span> {% endif %}{{product.metafields.price.enhanced-polarized-lenses}}
+
+{% elsif optionValue == 'Enhanced Polar Lenses'  %}
+{% if product.metafields.price.compare-enhanced-polarized %} <span>{{product.metafields.price.compare-enhanced-polarized}}</span> {% endif %}{{product.metafields.price.enhanced-polarized-lenses}}
+
+
+{% elsif optionValue == 'Reader Polarized'  %}
+{% if product.metafields.price.compare-reader-polarized %} <span>{{product.metafields.price.compare-reader-polarized}}</span> {% endif %}{{product.metafields.price.reader-polarized-lenses}}
+
+{% elsif optionValue == 'Reader Polar Lenses'  %}
+{% if product.metafields.price.compare-reader-polarized %} <span>{{product.metafields.price.compare-reader-polarized}}</span> {% endif %}{{product.metafields.price.reader-polarized-lenses}}
+
+
+{% endif %}

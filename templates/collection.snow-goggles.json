@@ -1,0 +1,152 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": false,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "163734108504564194": {
+      "type": "slideshow",
+      "blocks": {
+        "163734108599388279-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "Clarity in a Click",
+            "title": "New Switch Goggle",
+            "title_size": 65,
+            "subheading": "Slide-Lock™ Magnetic Technology",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/madson-switch-SABBATH-swap-desktop-header.jpg",
+            "image_mobile": "shopify://shop_images/madson-snow-goggles-collection-SABBATH--HELMET-header--blur-mobile_9379ff55-5d7d-4c10-af5b-6629aae75e26.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "163734108599388279-0"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "300px",
+        "parallax": false,
+        "style": "dots",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "b7325a8a-b76e-4dc7-83b2-011347d912ce": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14794292953175__b7325a8a-b76e-4dc7-83b2-011347d912ce-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Introducing the All-New <a href=\"https://madsonofamerica.com/collections/snow-goggles/products/switch-snow-goggle-black-sabbath\" title=\"https://madsonofamerica.com/collections/snow-goggles/products/switch-snow-goggle-black-sabbath\">Switch</a> & <a href=\"https://madsonofamerica.com/collections/snow-goggles/products/cylindro-buck\" title=\"https://madsonofamerica.com/collections/snow-goggles/products/cylindro-buck\">Cylindro</a> Snow Goggle. Redesigned for the modern adventurer, featuring a rimless design with an oversized cylindrical lens to bring you clarity and a wide field of view. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14794292953175__b7325a8a-b76e-4dc7-83b2-011347d912ce-text-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 2,
+            "rows_per_page": 20,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": false,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": false
+      }
+    },
+    "slideshow_ghGg4g": {
+      "type": "slideshow",
+      "blocks": {
+        "image_bLnHGi": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Cylindro",
+            "title_size": 80,
+            "subheading": "NEW SNOW GOGGLE",
+            "link": "shopify://products/cylindro-buck",
+            "link_text": "SHOP NOW",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/madson-snow-goggles-collectoin-buck-header-desktop_443187bb-e0ee-40e9-ad04-ac8451a935e1.jpg",
+            "image_mobile": "shopify://shop_images/madson-snow-goggles-collection-buck-header-mobile_d2b5c7d3-cb7d-48a6-bbca-b2e0ecd43ef9.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_bLnHGi"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "300px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "163734108504564194",
+    "b7325a8a-b76e-4dc7-83b2-011347d912ce",
+    "main-collection",
+    "slideshow_ghGg4g"
+  ]
+}

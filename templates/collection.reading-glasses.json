@@ -1,0 +1,271 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": false,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "16373329798959832d": {
+      "type": "slideshow",
+      "blocks": {
+        "fb8c323b-95c4-4f18-bdc2-33950cf9ca0c": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Readers",
+            "title_size": 80,
+            "subheading": "Readers built better™",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/madson-mens-reading-glasses-collection-desktop.jpg",
+            "image_mobile": "shopify://shop_images/kurt-readers-collection-header-mobile-color.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "fb8c323b-95c4-4f18-bdc2-33950cf9ca0c"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "300px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "blocks": {
+        "banner": {
+          "type": "banner",
+          "settings": {
+            "heading": "Banner promotion",
+            "text": "Add the details of your promotion in smaller text",
+            "link": "",
+            "label": "Shop now",
+            "color_tint": "#e95454",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        },
+        "advanced": {
+          "type": "advanced",
+          "disabled": true,
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "100",
+            "height": 500,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "banner",
+        "advanced"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": false
+      }
+    },
+    "1660433227103c93eb": {
+      "type": "rich-text",
+      "blocks": {
+        "166043322761748419-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Featured"
+          }
+        }
+      },
+      "block_order": [
+        "166043322761748419-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "166043299940dc2fa2": {
+      "type": "featured-product",
+      "blocks": {
+        "16604329990bd32cb2-0": {
+          "type": "price",
+          "disabled": true,
+          "settings": {}
+        },
+        "16604329990bd32cb2-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "16604329990bd32cb2-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "16604329990bd32cb2-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "16604329990bd32cb2-0",
+        "16604329990bd32cb2-1",
+        "16604329990bd32cb2-2",
+        "16604329990bd32cb2-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "featured_product": "dorsey-laguna-tortoise-eyeglasses-readers",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection-sunglasses",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": false
+          }
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 2,
+            "rows_per_page": 50,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "collectionTitle": "MEN'S READING GLASSES",
+        "collectionHeading": "Designed and built with the best materials available - no prescription necessary.",
+        "collectionSubheading": "FREE RETURNS ON ALL ORDERS",
+        "enable_sidebar": false,
+        "collapsed": true,
+        "filter_style": "drawer",
+        "enable_color_swatches": true,
+        "enable_sort": false
+      }
+    },
+    "1660435574d1954475": {
+      "type": "advanced-content",
+      "blocks": {
+        "166043557495b9f036-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "166043557495b9f036-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "16604475583c251391": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/madson-markup-graph-rx-3.jpg",
+        "image_width": 700,
+        "subtitle": "About Madson",
+        "title": "QUALITY & INTEGRITY",
+        "text": "<p>Our eyewear is made with the same top-quality materials as the other premium brands. But we keep it simple and avoid the inflated mark-ups. Madson is built on the tried and true promise of delivering premium quality at an affordable price.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "16373329798959832d",
+    "promo-grid",
+    "1660433227103c93eb",
+    "166043299940dc2fa2",
+    "main-collection",
+    "1660435574d1954475",
+    "16604475583c251391"
+  ]
+}

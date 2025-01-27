@@ -1,0 +1,247 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false
+      }
+    },
+    "16395920535478d8eb": {
+      "type": "slideshow",
+      "blocks": {
+        "1639592053372d66ef-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "The 2021",
+            "title": "Holiday Gift Guide",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/holiday-gift-guide-collection-desktop.jpg",
+            "image_mobile": "shopify://shop_images/holiday-gift-guide-collection-mobile.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "1639592053372d66ef-0"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "300px",
+        "parallax": false,
+        "style": "dots",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "blocks": {
+        "banner": {
+          "type": "banner",
+          "settings": {
+            "heading": "Under $70",
+            "text": "",
+            "link": "https://madsonofamerica.com/collections/holiday-gift-guide-2021?filter.v.availability=1&filter.v.price.gte=0.00&filter.v.price.lte=70.00",
+            "label": "Shop now",
+            "color_tint": "#a09578",
+            "color_tint_opacity": 20,
+            "framed": false
+          }
+        },
+        "5fad80c9-0fb0-47ce-b81b-a9d5b61d1d50": {
+          "type": "banner",
+          "settings": {
+            "heading": "Under $100",
+            "text": "",
+            "link": "https://madsonofamerica.com/collections/holiday-gift-guide-2021?filter.v.availability=1&filter.v.price.gte=0.00&filter.v.price.lte=100.00",
+            "label": "Shop now",
+            "color_tint": "#a09578",
+            "color_tint_opacity": 20,
+            "framed": false
+          }
+        },
+        "advanced": {
+          "type": "advanced",
+          "disabled": true,
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "100",
+            "height": 500,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "banner",
+        "5fad80c9-0fb0-47ce-b81b-a9d5b61d1d50",
+        "advanced"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": false
+      }
+    },
+    "1639592816a4c5c6fa": {
+      "type": "featured-collections",
+      "blocks": {
+        "16395928163b64f54a-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "16395928163b64f54a-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "t-shirts",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "16395928163b64f54a-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "hats",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "16395928163b64f54a-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "snow-goggles",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "63fea33a-c8b6-4ecf-a5cc-13aa0d629505": {
+          "type": "collection",
+          "settings": {
+            "collection": "apparel",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "7558cd80-c075-4c5f-8674-2ff50ea9cc4d": {
+          "type": "collection",
+          "settings": {
+            "collection": "sunglasses",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "49a0a7be-08b6-46c0-aafd-b386951f5387": {
+          "type": "collection",
+          "settings": {
+            "collection": "blue-light",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "b266c52a-359a-42ae-9b33-1fe9b002ee10": {
+          "type": "collection",
+          "settings": {
+            "collection": "eyeglasses",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "16395928163b64f54a-0",
+        "16395928163b64f54a-1",
+        "16395928163b64f54a-2",
+        "16395928163b64f54a-3",
+        "63fea33a-c8b6-4ecf-a5cc-13aa0d629505",
+        "7558cd80-c075-4c5f-8674-2ff50ea9cc4d",
+        "49a0a7be-08b6-46c0-aafd-b386951f5387",
+        "b266c52a-359a-42ae-9b33-1fe9b002ee10"
+      ],
+      "settings": {
+        "title": "",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 2,
+            "rows_per_page": 20,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "16395920535478d8eb",
+    "promo-grid",
+    "1639592816a4c5c6fa",
+    "main-collection"
+  ]
+}

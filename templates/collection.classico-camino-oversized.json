@@ -1,0 +1,485 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": false,
+        "collection_image_enable": false,
+        "parallax": false
+      }
+    },
+    "16373329798959832d": {
+      "type": "slideshow",
+      "blocks": {
+        "1637332979dc570147-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Men's Sunglasses",
+            "title_size": 66,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/sunglass_collection_desktop_TEMPLATE.jpg",
+            "image_mobile": "shopify://shop_images/kasey_mobile_test.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "1637332979dc570147-0"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "250px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "1663825179cf46789d": {
+      "type": "rich-text",
+      "blocks": {
+        "1663825179b9c9ff0c-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>★★★★★<br/>“I have worn many of the “bigger named” glasses over the years and paid the “bigger name” prices. I am so glad I found Madson! Great glasses, at a price that a working man can still afford. You have a customer for life!”<strong><br/>- Justin W.</strong></p>"
+          }
+        },
+        "1663825179b9c9ff0c-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Rich text"
+          }
+        }
+      },
+      "block_order": [
+        "1663825179b9c9ff0c-1",
+        "1663825179b9c9ff0c-0"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "16574833660f42eb77": {
+      "type": "featured-product",
+      "blocks": {
+        "1657483365c0d3dd0f-0": {
+          "type": "price",
+          "disabled": true,
+          "settings": {}
+        },
+        "1657483365c0d3dd0f-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "1657483365c0d3dd0f-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "1657483365c0d3dd0f-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "69aed8a8-e97f-414f-8945-0cf3f3c708ae": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "048f496b-6019-4a69-9ae6-0a5c89cf9267": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "package",
+            "text": "Free Returns"
+          }
+        },
+        "5dfdb81b-889e-4acb-a19c-fb2b62b1221d": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "checkmark",
+            "text": "Lifetime Warranty"
+          }
+        },
+        "4c7980f7-03bf-4876-a345-32f74bd9f530": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Inspired by the classic styles of the 1950s the Classico is a beefed-up oversized version of a timeless shape. "
+          }
+        },
+        "b49a4ada-ebfc-411b-b453-0fee9ddc4427": {
+          "type": "tab",
+          "settings": {
+            "title": "CLASSICO DETAILS",
+            "content": "<p><a href=\"https://madsonofamerica.com/collections/classico-camino-mens-oversized-collection#shopify-section-template--14550921674839__16574870464346dabd\" title=\"https://madsonofamerica.com/collections/classico-camino-mens-oversized-collection#shopify-section-template--14550921674839__16574870464346dabd\"><strong>Click: Classico Reviews<br/></strong></a></p><p><a href=\"https://madsonofamerica.com/products/classico-black-matte-grey-polarized\" title=\"https://madsonofamerica.com/products/classico-black-matte-grey-polarized\"><strong>Click: See All Classico Colorways</strong></a><strong><br/></strong></p><p><a href=\"https://madsonofamerica.com/products/classico-black-matte-grey-prescription-polarized\" title=\"https://madsonofamerica.com/products/classico-black-matte-grey-prescription-polarized\"><strong>Click: Classico Presscription Sunglasses</strong></a><strong><br/></strong><br/>• The Classico frame is built for lightweight comfort, long-lasting fit, and durability.</p><p>Each sunglass frame is tumbled, hand polished and forged to upload the highest quality standards.<br/><br/><strong>• Fit Guarantee:</strong><br/>Worried about the fit? Don’t. Our frame fit guarantee ensures you will be 100% satisfied with your frame fit - or your money back.<br/><br/><strong>• Shipping & Free Returns: </strong><br/>We offer worldwide shipping and free returns for any U.S. orders. All products can be returned with our 60-day hassle-free - no questions asked return policy for any U.S. orders.<br/><br/><strong>• Lifetime Warranty: </strong><br/>Our frames are guaranteed against fault in manufacturing materials and workmanship. If your frames are damaged due to manufacturing defects, we will gladly replace them at no extra charge.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657483365c0d3dd0f-0",
+        "1657483365c0d3dd0f-1",
+        "1657483365c0d3dd0f-2",
+        "1657483365c0d3dd0f-3",
+        "69aed8a8-e97f-414f-8945-0cf3f3c708ae",
+        "048f496b-6019-4a69-9ae6-0a5c89cf9267",
+        "5dfdb81b-889e-4acb-a19c-fb2b62b1221d",
+        "4c7980f7-03bf-4876-a345-32f74bd9f530",
+        "b49a4ada-ebfc-411b-b453-0fee9ddc4427"
+      ],
+      "settings": {
+        "featured_product": "classico-black-matte-grey-polarized",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "1657490034f567c6f5": {
+      "type": "rich-text",
+      "blocks": {
+        "16574900341f1cdd86-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Try'em for 60 Days Risk-Free"
+          }
+        },
+        "16574900341f1cdd86-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>100% Money Back Hassle- Free Guarantee</p>"
+          }
+        }
+      },
+      "block_order": [
+        "16574900341f1cdd86-0",
+        "16574900341f1cdd86-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "1657485426b4869eb1": {
+      "type": "featured-product",
+      "blocks": {
+        "1657485426cdb55b4b-0": {
+          "type": "price",
+          "settings": {}
+        },
+        "1657485426cdb55b4b-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "1657485426cdb55b4b-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "1657485426cdb55b4b-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "fac665f2-e9ab-4974-8421-0bc47303cc41": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "26c3438f-7949-4e8e-99c8-6006934b7fd5": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "The Camino is a frame with a bold square shape. It is similar to the Madson Classico style with a wide fit, stainless steel hinges and a heavy duty feel."
+          }
+        },
+        "f5b816c2-8145-4330-824f-5f910b496a67": {
+          "type": "tab",
+          "settings": {
+            "title": "CAMINO DETAILS",
+            "content": "<p><a href=\"https://madsonofamerica.com/collections/classico-camino-mens-oversized-collection#shopify-section-template--14550921674839__1657490709ea2da1fc\" title=\"https://madsonofamerica.com/collections/classico-camino-mens-oversized-collection#shopify-section-template--14550921674839__1657490709ea2da1fc\"><strong>Click: Camino Reviews</strong></a></p><p><a href=\"https://madsonofamerica.com/products/camino-black-matte-grey-polarized\" title=\"https://madsonofamerica.com/products/camino-black-matte-grey-polarized\"><strong>Click: See All Camino Colorways</strong></a></p><p><a href=\"https://madsonofamerica.com/products/camino-black-matte-grey-prescription-polarized\" title=\"https://madsonofamerica.com/products/camino-black-matte-grey-prescription-polarized\"><strong>Click: Camino Prescription Sunglasses</strong></a><br/><br/>• The Camino frame is built for lightweight comfort, long-lasting fit, and durability.</p><p>Each sunglass frame is tumbled, hand polished and forged to upload the highest quality standards.<br/><br/><strong>• Fit Guarantee:</strong><br/>Worried about the fit? Don’t. Our frame fit guarantee ensures you will be 100% satisfied with your frame fit - or your money back.<br/><br/><strong>• Shipping: </strong><br/>We offer worldwide shipping and free returns for any U.S. orders. All products can be returned with our 60-day hassle-free - no questions asked return policy for any U.S. orders.<br/><br/><strong>• Lifetime Warranty: </strong><br/>Our frames are guaranteed against fault in manufacturing materials and workmanship. If your frames are damaged due to manufacturing defects, we will gladly replace them at no extra charge.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657485426cdb55b4b-0",
+        "1657485426cdb55b4b-1",
+        "1657485426cdb55b4b-2",
+        "1657485426cdb55b4b-3",
+        "fac665f2-e9ab-4974-8421-0bc47303cc41",
+        "26c3438f-7949-4e8e-99c8-6006934b7fd5",
+        "f5b816c2-8145-4330-824f-5f910b496a67"
+      ],
+      "settings": {
+        "featured_product": "camino-black-matte-grey-polarized",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "16574870464346dabd": {
+      "type": "testimonials",
+      "blocks": {
+        "165748704657c82ce2-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>\"Good quality, very cool design and a great fit for a guy with a big head.\" </p>",
+            "author": "Andrew P.",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "165748704657c82ce2-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>\"Classico's are Killer shades.I usually buy Oakley or Maui Jim’s. These were just as nice for 1/2 the price and the weight is much more comfortable for an all day wear.\"</p>",
+            "author": "Anthony L.",
+            "author_info": "Las Vegas, Nevada"
+          }
+        },
+        "165748704657c82ce2-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>\"Great fit, well made, lightweight and sturdy. A great oversized fit. If you have a larger head or wider face it's great to have an option like these...\"</p>",
+            "author": "Mick B.",
+            "author_info": "Concord, CA"
+          }
+        },
+        "165748704657c82ce2-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>\"Best quality for the price. After looking at different brands and wanting to find an updated look from my VonZippers, the Classico matte black was a no-brainer! Great size frame for the big melon dudes. Keep up the good work over there.\"</p>",
+            "author": "Bill S.",
+            "author_info": "New York City, NY"
+          }
+        },
+        "165748704657c82ce2-4": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "165748704657c82ce2-0",
+        "165748704657c82ce2-2",
+        "165748704657c82ce2-1",
+        "165748704657c82ce2-3",
+        "165748704657c82ce2-4"
+      ],
+      "settings": {
+        "title": "Classico Reviews",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "1657490709ea2da1fc": {
+      "type": "testimonials",
+      "blocks": {
+        "165749070842ba9a81-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>\"Finally found shades that fit my big head. Love the quality and the price too!\"</p>",
+            "author": "Eric M.",
+            "author_info": "Seal Beach, CA"
+          }
+        },
+        "165749070842ba9a81-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>\"Great fit for a guy with a big head. Love the quality and the feel of these sunglasses.\"</p>",
+            "author": "Gerardo L.",
+            "author_info": "Northridge, CA"
+          }
+        },
+        "165749070842ba9a81-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>\"Hands down the best pair of sunglasses I’ve ever owned, I have a large dome and have fought for years to find a pair that didn’t make me look like I wasn’t wearing kids glasses, These fit absolutely perfect, build quality is unreal, fit is comfortable and I’m a lifer with you guys now, Thank you. I’m about to buy my second pair for my prescription eye glasses.. over all 5 stars guys.\"</p>",
+            "author": "David L.",
+            "author_info": "Lakewood, CA"
+          }
+        },
+        "165749070842ba9a81-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>\"I’ve tried every type of sunglasses brand! Madson is the best, there styles are clean and their customer service is above and beyond. Madson for life!!!\"</p>",
+            "author": "Julian G.",
+            "author_info": "Riverside, CA"
+          }
+        },
+        "165749070842ba9a81-4": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "165749070842ba9a81-0",
+        "165749070842ba9a81-1",
+        "165749070842ba9a81-3",
+        "165749070842ba9a81-2",
+        "165749070842ba9a81-4"
+      ],
+      "settings": {
+        "title": "Camino Reviews",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "1657485571d969a6b5": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/madson-markup-graph-polarized-2.jpg",
+        "image_width": 700,
+        "subtitle": "ABOUT MADSON",
+        "title": "INTEGRITY & QUALITY",
+        "text": "<p>Our eyewear is made with the same top-quality materials as the other premium brands. But we keep it simple and avoid the inflated mark-ups. Madson is built on the tried and true promise of delivering premium quality at an affordable price.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "1657493082d5ba9fac": {
+      "type": "apps",
+      "settings": {}
+    },
+    "main-collection": {
+      "type": "main-collection-sunglasses",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": false
+          }
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 2,
+            "rows_per_page": 50,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "collectionTitle": "MEN'S OVERSIZED SUNGLASSES",
+        "collectionHeading": "Designed and built with the best materials available - backed with a Lifetime Warranty.",
+        "collectionSubheading": "FREE RETURNS ON ALL ORDERS",
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "drawer",
+        "enable_color_swatches": true,
+        "enable_sort": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "16373329798959832d",
+    "1663825179cf46789d",
+    "16574833660f42eb77",
+    "1657490034f567c6f5",
+    "1657485426b4869eb1",
+    "16574870464346dabd",
+    "1657490709ea2da1fc",
+    "1657485571d969a6b5",
+    "1657493082d5ba9fac",
+    "main-collection"
+  ]
+}

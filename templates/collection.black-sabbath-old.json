@@ -1,0 +1,244 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": false,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "163734108504564194": {
+      "type": "slideshow",
+      "blocks": {
+        "163734108599388279-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Limited Edition\nMadson x Black Sabbath\nCollection",
+            "title_size": 48,
+            "subheading": "Elevate Your Style with the Exclusive Collection starting for just $79",
+            "link": "",
+            "link_text": "Shop Now - Limited Availability",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#9b4bf4",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/madson-black-sabbath-collection-header-desktop-2023.jpg",
+            "image_mobile": "shopify://shop_images/madson-black-sabbath-collection-header-mobile-2023.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "163734108599388279-0"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "300px",
+        "parallax": false,
+        "style": "dots",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "8671b615-6ab4-489c-97b1-1c4ccc876e69": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14715410677847__8671b615-6ab4-489c-97b1-1c4ccc876e69-1669999562579c96d8-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>★★★★★<br/>“Fast shipping, outstanding quality and design. Other brands charge double. Madson is legit, and I get a lot of compliments on the Black Sabbath edition.”<br/><br/>- Evan M.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14715410677847__8671b615-6ab4-489c-97b1-1c4ccc876e69-1669999562579c96d8-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "f7a931e5-d8aa-417b-abb5-5ed5355582ad": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14715410677847__f7a931e5-d8aa-417b-abb5-5ed5355582ad-1669999562579c96d8-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Madson x Black Sabbath"
+          }
+        },
+        "template--14715410677847__f7a931e5-d8aa-417b-abb5-5ed5355582ad-1669999562579c96d8-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Madson is honored to collaborate with Black Sabbath by introducing a new limited edition collection.<br/><br/>Growing up skateboarding, surfing, and creating art - the founders of Madson grew up on heavy metal. Inspired by the heavy chords of Sabbath, the new collection features styles with all-black frames and blacked-out metal logos. The Black Sabbath logo is prominently featured in the Master of Reality purple on the sunglasses and snow goggle.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14715410677847__f7a931e5-d8aa-417b-abb5-5ed5355582ad-1669999562579c96d8-0",
+        "template--14715410677847__f7a931e5-d8aa-417b-abb5-5ed5355582ad-1669999562579c96d8-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 2,
+            "rows_per_page": 20,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": false,
+        "collapsed": false,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "221e8d2e-0095-4dfe-b622-f1a0480d3dd1": {
+      "type": "testimonials",
+      "blocks": {
+        "template--14715410677847__221e8d2e-0095-4dfe-b622-f1a0480d3dd1-16699995620a93979b-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>\"Awesome sunglasses, Ozzie definitely approves.\"</p>",
+            "author": "- Michael W.",
+            "author_info": "Australia"
+          }
+        },
+        "template--14715410677847__221e8d2e-0095-4dfe-b622-f1a0480d3dd1-16699995620a93979b-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>\"I was very pleasantly surprised with the Black Sabbath sunglasses. I was big on buying expensive brands, but gave Madson a try.. No disappointment at all, good quality, cool band, and polarized! I will definitely buy another pair from Madson.\"</p>",
+            "author": "- Genaro P.",
+            "author_info": "Alhambra, California"
+          }
+        },
+        "template--14715410677847__221e8d2e-0095-4dfe-b622-f1a0480d3dd1-16699995620a93979b-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>\"Fast Shipping, outstanding quality and design. Other brands charge double. Madson is legit, and I get a lot of compliments on the Black Sabbath edition.\"</p>",
+            "author": "- Evan M.",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "template--14715410677847__221e8d2e-0095-4dfe-b622-f1a0480d3dd1-16699995620a93979b-0",
+        "template--14715410677847__221e8d2e-0095-4dfe-b622-f1a0480d3dd1-16699995620a93979b-1",
+        "template--14715410677847__221e8d2e-0095-4dfe-b622-f1a0480d3dd1-16699995620a93979b-2"
+      ],
+      "settings": {
+        "title": "Reviews",
+        "align_text": "center",
+        "cta_label": "READ ALL",
+        "cta_url": "",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "177ce79f-166e-466e-a674-cd37a63a1607": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/madson-markup-graph-polarized-2_1080x_8822d4e1-84c9-4411-8809-ac09dbf42653.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "QUALITY & INTEGRITY",
+        "text": "<p>Our eyewear is made with the same top-quality materials as the other premium brands. But we keep it simple and avoid the inflated mark-ups. Madson is built on the tried and true promise of delivering premium quality at an affordable price.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "3fc78f65-28c3-4401-a7ec-c9895a45a116": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14715410677847__3fc78f65-28c3-4401-a7ec-c9895a45a116-16699994576a52f76f-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/madson-x-sabbath-packaging-desktop2.jpg",
+            "image_mobile": "shopify://shop_images/madson-x-black-sabbath-packaging-collection-mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14715410677847__3fc78f65-28c3-4401-a7ec-c9895a45a116-16699994576a52f76f-0"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "300px",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "163734108504564194",
+    "8671b615-6ab4-489c-97b1-1c4ccc876e69",
+    "f7a931e5-d8aa-417b-abb5-5ed5355582ad",
+    "main-collection",
+    "221e8d2e-0095-4dfe-b622-f1a0480d3dd1",
+    "177ce79f-166e-466e-a674-cd37a63a1607",
+    "3fc78f65-28c3-4401-a7ec-c9895a45a116"
+  ]
+}

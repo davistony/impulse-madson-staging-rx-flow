@@ -1,0 +1,519 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "enable": false,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 2,
+            "rows_per_page": 20,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "9aba5bc2-35f9-4e07-b27b-0924d5fbc37a": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15029499002967__9aba5bc2-35f9-4e07-b27b-0924d5fbc37a-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Gift Guides",
+            "title_size": 60,
+            "subheading": "",
+            "link": "#shopify-section-template--15029499002967__bf530153-29e7-4d81-973f-273e4d30383b",
+            "link_text": "Shop Nuestra Señora",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/madson-gift-guide-senora-destop-header-image_d17d9e35-61c7-44a0-a6e6-d6e71d31e353.jpg",
+            "image_mobile": "shopify://shop_images/madson-gift-guide-senora-mobile-header-image_c7fa974c-a1ae-4016-9ac9-ec2cc6e88ca1.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "bottom center"
+          }
+        },
+        "template--15029499002967__9aba5bc2-35f9-4e07-b27b-0924d5fbc37a-image-2": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Gift Guides",
+            "title_size": 60,
+            "subheading": "",
+            "link": "#Slideshow-template--15029499002967__fe095a2f-89c5-4aa1-bf92-50fbfc2b9d6f",
+            "link_text": "Shop Black Sabbath",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/sabbath-giftguide-topdown-desktop-header.jpg",
+            "image_mobile": "shopify://shop_images/sabbath-giftguide-topdown-mobile-header.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "bottom center"
+          }
+        },
+        "6b2083da-8a5b-4514-bab8-465d200c9662": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Gift Guides",
+            "title_size": 60,
+            "subheading": "",
+            "link": "#Slideshow-template--15029499002967__d0015876-a0f9-42d1-9ed1-d2e72afd3123",
+            "link_text": "SHOP CAMO",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/madson-gift-guide-camo.jpg",
+            "image_mobile": "shopify://shop_images/madson-gift-guide-camo-mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "cb038e25-3a67-4d63-8acf-5bb8a032c4ef": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Gift Guide",
+            "title_size": 60,
+            "subheading": "",
+            "link": "#Slideshow-template--15029499002967__b2f5ab15-4e30-40b4-82fa-913b7be7d667",
+            "link_text": "SHOP DEALERSHIP",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/madson-gift-guide-dealership-desktop.jpg",
+            "image_mobile": "shopify://shop_images/madson-gift-guide-dealership-mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "eb2cfafb-745b-4064-8079-744748c94588": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Gift Guide",
+            "title_size": 60,
+            "subheading": "",
+            "link": "#Slideshow-template--15029499002967__4990d761-c6a4-4c04-b3bc-50df79b8b1b6",
+            "link_text": "SHOP EMPIRE",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/madson-gift-guide-empire-desktop.jpg",
+            "image_mobile": "shopify://shop_images/madson-gift-guide-empire-mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15029499002967__9aba5bc2-35f9-4e07-b27b-0924d5fbc37a-image-1",
+        "template--15029499002967__9aba5bc2-35f9-4e07-b27b-0924d5fbc37a-image-2",
+        "6b2083da-8a5b-4514-bab8-465d200c9662",
+        "cb038e25-3a67-4d63-8acf-5bb8a032c4ef",
+        "eb2cfafb-745b-4064-8079-744748c94588"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "300px",
+        "parallax": false,
+        "style": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "db7b4e2e-91f5-40f7-8468-dcf500b65c49": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15029499002967__db7b4e2e-91f5-40f7-8468-dcf500b65c49-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Get your Holiday's shopping started early with our curated Gift Guides.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15029499002967__db7b4e2e-91f5-40f7-8468-dcf500b65c49-text-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "bf530153-29e7-4d81-973f-273e4d30383b": {
+      "type": "featured-collection-single",
+      "settings": {
+        "title": "Nuestra Señora",
+        "home_featured_products": "gift-guide-nuestra-senora",
+        "per_row": 5,
+        "rows": 2,
+        "mobile_scrollable": false,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "fe095a2f-89c5-4aa1-bf92-50fbfc2b9d6f": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15029499002967__fe095a2f-89c5-4aa1-bf92-50fbfc2b9d6f-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/sabbath-giftguide-topdown-desktop-header.jpg",
+            "image_mobile": "shopify://shop_images/sabbath-giftguide-topdown-mobile-header.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15029499002967__fe095a2f-89c5-4aa1-bf92-50fbfc2b9d6f-image-1"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "400px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "e40ff623-0129-4d14-b20b-d5d9a3fd019d": {
+      "type": "featured-collection-single",
+      "settings": {
+        "title": "Black Sabbath",
+        "home_featured_products": "gift-guide-sabbath",
+        "per_row": 5,
+        "rows": 2,
+        "mobile_scrollable": false,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "d0015876-a0f9-42d1-9ed1-d2e72afd3123": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15029499002967__d0015876-a0f9-42d1-9ed1-d2e72afd3123-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/madson-gift-guide-camo.jpg",
+            "image_mobile": "shopify://shop_images/madson-gift-guide-camo-mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15029499002967__d0015876-a0f9-42d1-9ed1-d2e72afd3123-image-1"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "400px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "736a2177-697e-4ad2-aa68-0a3233f8b449": {
+      "type": "featured-collection-single",
+      "settings": {
+        "title": "Camo",
+        "home_featured_products": "gift-guide-camo",
+        "per_row": 5,
+        "rows": 2,
+        "mobile_scrollable": false,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "b2f5ab15-4e30-40b4-82fa-913b7be7d667": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15029499002967__b2f5ab15-4e30-40b4-82fa-913b7be7d667-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/madson-gift-guide-dealership-desktop.jpg",
+            "image_mobile": "shopify://shop_images/madson-gift-guide-dealership-mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15029499002967__b2f5ab15-4e30-40b4-82fa-913b7be7d667-image-1"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "400px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "d67a602d-b8fe-49d8-a593-b0e3e341855b": {
+      "type": "featured-collection-single",
+      "settings": {
+        "title": "Dealership",
+        "home_featured_products": "gift-guide-dealership",
+        "per_row": 5,
+        "rows": 3,
+        "mobile_scrollable": false,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "4990d761-c6a4-4c04-b3bc-50df79b8b1b6": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15029499002967__4990d761-c6a4-4c04-b3bc-50df79b8b1b6-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/madson-gift-guide-empire-desktop.jpg",
+            "image_mobile": "shopify://shop_images/madson-gift-guide-empire-mobile_d0d1beda-808a-4195-8ffc-4bda3217d6c4.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15029499002967__4990d761-c6a4-4c04-b3bc-50df79b8b1b6-image-1"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "400px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "62f029e3-4980-49c2-9a22-dc94bfb35a8f": {
+      "type": "featured-collection-single",
+      "settings": {
+        "title": "Empire",
+        "home_featured_products": "gift-guide-empire",
+        "per_row": 5,
+        "rows": 3,
+        "mobile_scrollable": false,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "e898fe6d-a0c4-4a7d-89f8-b74f1776371c": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15029499002967__e898fe6d-a0c4-4a7d-89f8-b74f1776371c-image-2": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/madson-gift-guide-gas-station-desktop.jpg",
+            "image_mobile": "shopify://shop_images/madson-gift-guide-gas-station-mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15029499002967__e898fe6d-a0c4-4a7d-89f8-b74f1776371c-image-2"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "400px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "3d979031-c435-4568-9717-efa6e942912c": {
+      "type": "featured-collection-single",
+      "settings": {
+        "title": "Gas Station",
+        "home_featured_products": "gift-guide-gas-station",
+        "per_row": 5,
+        "rows": 3,
+        "mobile_scrollable": false,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "5fa62ab4-7227-49cd-9e12-58bd9479d953": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15029499002967__5fa62ab4-7227-49cd-9e12-58bd9479d953-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/madson-gift-guide-santa-cruz-desktop.jpg",
+            "image_mobile": "shopify://shop_images/madson-gift-guide-santa-cruz-mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15029499002967__5fa62ab4-7227-49cd-9e12-58bd9479d953-image-1"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "400px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "345b126b-e77d-4963-89a0-66030351bb33": {
+      "type": "featured-collection-single",
+      "settings": {
+        "title": "Santa Cruz",
+        "home_featured_products": "gift-guide-santa-cruz",
+        "per_row": 5,
+        "rows": 2,
+        "mobile_scrollable": false,
+        "view_all": false,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "9aba5bc2-35f9-4e07-b27b-0924d5fbc37a",
+    "db7b4e2e-91f5-40f7-8468-dcf500b65c49",
+    "bf530153-29e7-4d81-973f-273e4d30383b",
+    "fe095a2f-89c5-4aa1-bf92-50fbfc2b9d6f",
+    "e40ff623-0129-4d14-b20b-d5d9a3fd019d",
+    "d0015876-a0f9-42d1-9ed1-d2e72afd3123",
+    "736a2177-697e-4ad2-aa68-0a3233f8b449",
+    "b2f5ab15-4e30-40b4-82fa-913b7be7d667",
+    "d67a602d-b8fe-49d8-a593-b0e3e341855b",
+    "4990d761-c6a4-4c04-b3bc-50df79b8b1b6",
+    "62f029e3-4980-49c2-9a22-dc94bfb35a8f",
+    "e898fe6d-a0c4-4a7d-89f8-b74f1776371c",
+    "3d979031-c435-4568-9717-efa6e942912c",
+    "5fa62ab4-7227-49cd-9e12-58bd9479d953",
+    "345b126b-e77d-4963-89a0-66030351bb33"
+  ]
+}

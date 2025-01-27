@@ -1,0 +1,251 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "e69d50f6-f549-458a-823b-3cc14e4f9b10": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14794293575767__e69d50f6-f549-458a-823b-3cc14e4f9b10-1684366404552ecd52-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "Giveaway - VIP Tickets",
+            "title": "Social Distortion",
+            "title_size": 80,
+            "subheading": "Harley-Davidson Homecoming Festival",
+            "link": "https://madsonofamerica.com/pages/social-distortion-harley-davidson-homecoming#shopify-section-template--14794293575767__16843663672253744b",
+            "link_text": "Enter Now",
+            "link_2": "https://madsonofamerica.com/pages/social-distortion-harley-davidson-homecoming#shopify-section-template--14794293575767__a2dba95c-a466-46ae-8313-cc3bf95a8b82",
+            "link_text_2": "EVENT DETAILS",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/2-homecoming-overview-desktop-tall-hero.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14794293575767__e69d50f6-f549-458a-823b-3cc14e4f9b10-1684366404552ecd52-0"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "300px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "42672127-a559-47f9-b56b-e614c4ec5f68": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14794293575767__42672127-a559-47f9-b56b-e614c4ec5f68-16843688859cf83096-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Winner will be announced June 12th, 2023</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14794293575767__42672127-a559-47f9-b56b-e614c4ec5f68-16843688859cf83096-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "a2dba95c-a466-46ae-8313-cc3bf95a8b82": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/mike-ness-live-1200x1200.jpg",
+        "image_width": 700,
+        "subtitle": "Milwaukee, Wisconsin",
+        "title": "Friday, July 14, 2023",
+        "text": "<p>Madson is giving away two VIP tickets to see rock legends Green Day and Social Distortion live on Friday, July 14, 2023.<br/><br/>We're offering an exclusive chance to win VIP treatment at the festival. Our VIP tickets come loaded with perks: an unmatched view of the performing headliner from a dedicated, elevated deck, unlimited access to the VIP Lounge with air-conditioned restrooms and relaxed seating, a full-service bar, food available for purchase, and a dedicated VIP Concierge to assist with all your festival needs. And yes, all of these luxuries could be yours!</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "78488910-9d44-4bc5-aaec-302707157171": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/harley-davidson-poster-1200x1200.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<p>While we're providing the VIP experience, we aren't covering travel expenses. You'll have to make your own way to Milwaukee to enjoy the festival. But don't worry, the trip will be more than worth it!<br/><br/>So, how can you enter this fantastic giveaway? It's easy! Enter below by entering your email address. Remember, the clock is ticking, and you don't want to miss your chance at this once-in-a-lifetime experience.<br/><br/>Good luck, and we can't wait to see you rocking out at the Harley-Davidson Homecoming Festival!</p>",
+        "button_label": "ENTER TO WIN",
+        "button_link": "https://madsonofamerica.com/pages/social-distortion-harley-davidson-homecoming#shopify-section-template--14794293575767__16843663672253744b",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "23c8184e-2541-43ef-b71c-7acc24315193": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/social_d_memphis_email_back_in_stock.jpg",
+        "image_width": 700,
+        "subtitle": "Limited Edition",
+        "title": "Madson x Social Distortion",
+        "text": "<p>★★★★★<br/>“I own three pair of Madson sunglasses. By far the best sunglasses and eyeglasses I've ever owned. I love the Social D collab.”<br/>- Jason D.<br/><br/></p>",
+        "button_label": "LEARN MORE",
+        "button_link": "shopify://collections/madson-social-distortion",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "16843663672253744b": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "b76108c0-908f-4591-a837-42665417bf6d": {
+      "type": "rich-text",
+      "blocks": {
+        "977fd9ca-0366-4c83-a6c4-a895701925bb": {
+          "type": "heading",
+          "settings": {
+            "title": "Disclaimer"
+          }
+        },
+        "template--14794293575767__b76108c0-908f-4591-a837-42665417bf6d-16843688859cf83096-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>This giveaway is for two VIP tickets to the Harley-Davidson Homecoming Festival on Friday, July 14, 2023. Travel to Milwaukee, WI, USA is not included in the prize. The winner will be responsible for their own transportation, accommodation, and other associated costs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "977fd9ca-0366-4c83-a6c4-a895701925bb",
+        "template--14794293575767__b76108c0-908f-4591-a837-42665417bf6d-16843688859cf83096-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "69991cd2-b993-4e33-a05a-e39e1893f261": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14794293575767__69991cd2-b993-4e33-a05a-e39e1893f261-1684366404552ecd52-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "120th Anniversary",
+            "title": "Harley-Davidson\nEvent Details",
+            "title_size": 80,
+            "subheading": "OFFICIAL EVENT DETAILS",
+            "link": "https://www.harley-davidson.com/us/en/content/event-calendar/homecoming.html",
+            "link_text": "HARLEY-DAVIDSON EVENT",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/harley-davidson-poster-1200x1200.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 60,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14794293575767__69991cd2-b993-4e33-a05a-e39e1893f261-1684366404552ecd52-0"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "1639071897d849cbd3": {
+      "type": "featured-collections",
+      "blocks": {
+        "1639071897108e3e56-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "sunglasses",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "1639071897108e3e56-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "eyeglasses",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "1639071897108e3e56-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "blue-light",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "1639071897108e3e56-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "snow-goggles",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "1639071897108e3e56-0",
+        "1639071897108e3e56-1",
+        "1639071897108e3e56-2",
+        "1639071897108e3e56-3"
+      ],
+      "settings": {
+        "title": "Collections",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    }
+  },
+  "order": [
+    "e69d50f6-f549-458a-823b-3cc14e4f9b10",
+    "main",
+    "42672127-a559-47f9-b56b-e614c4ec5f68",
+    "a2dba95c-a466-46ae-8313-cc3bf95a8b82",
+    "78488910-9d44-4bc5-aaec-302707157171",
+    "23c8184e-2541-43ef-b71c-7acc24315193",
+    "16843663672253744b",
+    "b76108c0-908f-4591-a837-42665417bf6d",
+    "69991cd2-b993-4e33-a05a-e39e1893f261",
+    "1639071897d849cbd3"
+  ]
+}
